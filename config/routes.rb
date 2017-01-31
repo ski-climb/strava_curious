@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root "home#home"
+
+  namespace :auth do
+    get "/strava/callback", to: "sessions#create"
+  end
+
+  resource :dashboard, only: [:show]
 end
