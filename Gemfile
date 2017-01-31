@@ -20,6 +20,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'faraday'
 gem 'figaro'
 
+gem 'pry'
+
 gem 'omniauth', '~> 1.3'
 
 group :development, :test do
