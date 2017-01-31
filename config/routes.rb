@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   end
 
   resource :dashboard, only: [:show]
+
+  get "/:does_not_exist", to: "nawwal#home"
 end
