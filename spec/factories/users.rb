@@ -7,4 +7,9 @@ FactoryGirl.define do
     email      { Faker::StarWars.character.gsub(" ",".") + "@" + Faker::StarWars.planet + ".com" }
     token      { Faker::Number.hexadecimal(30) }
   end
+
+  trait :strava do
+    uid   { ENV["STRAVA_ATHLETE_ID"] }
+    token { ENV["ACCESS_TOKEN"] }
+  end
 end
