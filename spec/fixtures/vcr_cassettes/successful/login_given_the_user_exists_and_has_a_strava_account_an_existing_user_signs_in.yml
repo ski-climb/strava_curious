@@ -1,0 +1,743 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&redirect_uri=http://localhost:3000/auth/strava/callback&response_type=code&scope=view_private
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like
+        Gecko) Chrome/15.0.853.0 Safari/535.2
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - strava.com
+      Referer:
+      - !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: www.example.com
+        port: 80
+        path: "/"
+        query: 
+        opaque: 
+        fragment: 
+        parser: &1 !ruby/object:URI::RFC3986_Parser
+          regexp:
+            :SCHEME: !ruby/regexp /\A[A-Za-z][A-Za-z0-9+\-.]*\z/
+            :USERINFO: !ruby/regexp /\A(?:%\h\h|[!$&-.0-;=A-Z_a-z~])*\z/
+            :HOST: !ruby/regexp /\A(?:(?<IP-literal>\[(?:(?<IPv6address>(?:\h{1,4}:){6}(?<ls32>\h{1,4}:\h{1,4}|(?<IPv4address>(?<dec-octet>[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]|\d)\.\g<dec-octet>\.\g<dec-octet>\.\g<dec-octet>))|::(?:\h{1,4}:){5}\g<ls32>|\h{,4}::(?:\h{1,4}:){4}\g<ls32>|(?:(?:\h{1,4}:)?\h{1,4})?::(?:\h{1,4}:){3}\g<ls32>|(?:(?:\h{1,4}:){,2}\h{1,4})?::(?:\h{1,4}:){2}\g<ls32>|(?:(?:\h{1,4}:){,3}\h{1,4})?::\h{1,4}:\g<ls32>|(?:(?:\h{1,4}:){,4}\h{1,4})?::\g<ls32>|(?:(?:\h{1,4}:){,5}\h{1,4})?::\h{1,4}|(?:(?:\h{1,4}:){,6}\h{1,4})?::)|(?<IPvFuture>v\h+\.[!$&-.0-;=A-Z_a-z~]+))\])|\g<IPv4address>|(?<reg-name>(?:%\h\h|[!$&-.0-9;=A-Z_a-z~])*))\z/
+            :ABS_PATH: !ruby/regexp /\A\/(?:%\h\h|[!$&-.0-;=@-Z_a-z~])*(?:\/(?:%\h\h|[!$&-.0-;=@-Z_a-z~])*)*\z/
+            :REL_PATH: !ruby/regexp /\A(?:%\h\h|[!$&-.0-;=@-Z_a-z~])+(?:\/(?:%\h\h|[!$&-.0-;=@-Z_a-z~])*)*\z/
+            :QUERY: !ruby/regexp /\A(?:%\h\h|[!$&-.0-;=@-Z_a-z~\/?])*\z/
+            :FRAGMENT: !ruby/regexp /\A(?:%\h\h|[!$&-.0-;=@-Z_a-z~\/?])*\z/
+            :OPAQUE: !ruby/regexp /\A(?:[^\/].*)?\z/
+            :PORT: !ruby/regexp /\A[\x09\x0a\x0c\x0d ]*\d*[\x09\x0a\x0c\x0d ]*\z/
+      Http-Referer:
+      - http://www.example.com/
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Content-Type:
+      - text/html
+      Date:
+      - Wed, 01 Feb 2017 21:29:08 GMT
+      Location:
+      - http://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&response_type=code&redirect_uri=http://localhost:3000/auth/strava/callback&scope=view_private
+      Content-Length:
+      - '178'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 21:29:08 GMT
+- request:
+    method: get
+    uri: http://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&redirect_uri=http://localhost:3000/auth/strava/callback&response_type=code&scope=view_private
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like
+        Gecko) Chrome/15.0.853.0 Safari/535.2
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.strava.com
+      Referer:
+      - !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: www.example.com
+        port: 80
+        path: "/"
+        query: 
+        opaque: 
+        fragment: 
+        parser: *1
+      Http-Referer:
+      - http://www.example.com/
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 01 Feb 2017 21:29:08 GMT
+      Location:
+      - https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&response_type=code&redirect_uri=http://localhost:3000/auth/strava/callback&scope=view_private
+      Status:
+      - 301 Moved Permanently
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 852f08511e736c9da8315c32865c7d14
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '226'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&amp;response_type=code&amp;redirect_uri=http://localhost:3000/auth/strava/callback&amp;scope=view_private">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 21:29:08 GMT
+- request:
+    method: get
+    uri: https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&redirect_uri=http://localhost:3000/auth/strava/callback&response_type=code&scope=view_private
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like
+        Gecko) Chrome/15.0.853.0 Safari/535.2
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.strava.com
+      Referer:
+      - !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: www.example.com
+        port: 80
+        path: "/"
+        query: 
+        opaque: 
+        fragment: 
+        parser: *1
+      Http-Referer:
+      - http://www.example.com/
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 01 Feb 2017 21:29:09 GMT
+      Location:
+      - https://www.strava.com/login
+      Set-Cookie:
+      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPg%3D%3D--550698d33ddec4684d58eec197bc9786cf372a1f;
+        domain=strava.com; path=/; HttpOnly
+      Status:
+      - 302 Found
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - caa0461bf615278dbfff1d6d179be202
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '94'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="https://www.strava.com/login">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 21:29:09 GMT
+- request:
+    method: get
+    uri: https://www.strava.com/login
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like
+        Gecko) Chrome/15.0.853.0 Safari/535.2
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Cookie:
+      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPg%3D%3D--550698d33ddec4684d58eec197bc9786cf372a1f
+      Host:
+      - www.strava.com
+      Referer:
+      - !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: www.example.com
+        port: 80
+        path: "/"
+        query: 
+        opaque: 
+        fragment: 
+        parser: *1
+      Http-Referer:
+      - http://www.example.com/
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 01 Feb 2017 21:29:09 GMT
+      Etag:
+      - W/"e1bd542f8530ddc4394409f275fadad2"
+      Set-Cookie:
+      - _strava3_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPkkiEF9jc3JmX3Rva2VuBjsARkkiMTNIK1RYc3BFT3g0NnJaNGsrK1JtRTE3UkJLNWsxbVlXNzZEdW9JRjFnVXc9BjsARg%3D%3D--367cb32cd8ebcf4ccf4306aa9554a43aeb096d04;
+        domain=strava.com; path=/; HttpOnly
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 5b75012fe533443c9f6c3cd9d125e74e
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '5175'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 21:29:09 GMT
+- request:
+    method: post
+    uri: https://www.strava.com/session
+    body:
+      encoding: UTF-8
+      string: utf8=%E2%9C%93&authenticity_token=3H%2BTXspEOx46rZ4k%2B%2BRmE17RBK5k1mYW76DuoIF1gUw%3D&plan=&email=nbe105%40gmail.com&password=CTizPdRhb2yumFkpqiDX2etjBPPPXYqvYFMQdyGs
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like
+        Gecko) Chrome/15.0.853.0 Safari/535.2
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Cookie:
+      - _strava3_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPkkiEF9jc3JmX3Rva2VuBjsARkkiMTNIK1RYc3BFT3g0NnJaNGsrK1JtRTE3UkJLNWsxbVlXNzZEdW9JRjFnVXc9BjsARg%3D%3D--367cb32cd8ebcf4ccf4306aa9554a43aeb096d04
+      Host:
+      - www.strava.com
+      Referer:
+      - !ruby/object:URI::HTTPS
+        scheme: https
+        user: 
+        password: 
+        host: www.strava.com
+        port: 443
+        path: "/login"
+        query: 
+        opaque: 
+        fragment: 
+        parser: *1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Content-Length:
+      - '167'
+      Http-Referer:
+      - https://www.strava.com/login
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 01 Feb 2017 21:29:10 GMT
+      Location:
+      - https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&response_type=code&redirect_uri=http://localhost:3000/auth/strava/callback&scope=view_private
+      Set-Cookie:
+      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIhBfY3NyZl90b2tlbgY7AEZJIjEzSCtUWHNwRU94NDZyWjRrKytSbUUxN1JCSzVrMW1ZVzc2RHVvSUYxZ1V3PQY7AEZJIgdpZAY7AEZpA7jLkw%3D%3D--603e2ae7e9fe0ee5ebfec46264885debb5e93cea;
+        domain=strava.com; path=/; HttpOnly
+      - _strava4_session=ad770s73mal421qr94tg5tcgsf0gk868; domain=strava.com; path=/;
+        HttpOnly
+      Status:
+      - 302 Found
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - bdde42d5186b625736e33caa32e80537
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '226'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&amp;response_type=code&amp;redirect_uri=http://localhost:3000/auth/strava/callback&amp;scope=view_private">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 21:29:10 GMT
+- request:
+    method: get
+    uri: https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&redirect_uri=http://localhost:3000/auth/strava/callback&response_type=code&scope=view_private
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like
+        Gecko) Chrome/15.0.853.0 Safari/535.2
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Cookie:
+      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIhBfY3NyZl90b2tlbgY7AEZJIjEzSCtUWHNwRU94NDZyWjRrKytSbUUxN1JCSzVrMW1ZVzc2RHVvSUYxZ1V3PQY7AEZJIgdpZAY7AEZpA7jLkw%3D%3D--603e2ae7e9fe0ee5ebfec46264885debb5e93cea;
+        _strava4_session=ad770s73mal421qr94tg5tcgsf0gk868
+      Host:
+      - www.strava.com
+      Referer:
+      - !ruby/object:URI::HTTPS
+        scheme: https
+        user: 
+        password: 
+        host: www.strava.com
+        port: 443
+        path: "/login"
+        query: 
+        opaque: 
+        fragment: 
+        parser: *1
+      Http-Referer:
+      - https://www.strava.com/login
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 01 Feb 2017 21:29:11 GMT
+      Location:
+      - http://localhost:3000/auth/strava/callback?state=&code=a15b2ee634392546d6c560af628241dd2b463508
+      Status:
+      - 302 Found
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 9367ad88c9d5c07ee82d0b70ed97ddbf
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '165'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="http://localhost:3000/auth/strava/callback?state=&amp;code=a15b2ee634392546d6c560af628241dd2b463508">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 21:29:11 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/auth/strava/callback?code=a15b2ee634392546d6c560af628241dd2b463508&state=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like
+        Gecko) Chrome/15.0.853.0 Safari/535.2
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - localhost:3000
+      Http-Referer:
+      - https://www.strava.com/login
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://localhost:3000/activities
+      Content-Type:
+      - text/html; charset=utf-8
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _strava_curious_session=cGZyV3B2N1JUY2ZObkhBNkNja21HRUNrL1UwbW5vNHIwUFpyR3grRDhZM29iUU02Z2tpZEd2U0FZZ0R6Znp2NDNRdHZ0L1JVOFB2OE1Mcnk0N1QvOUE9PS0tZkFIdVc3USt3RlZJTWc2K1dZdU9IQT09--4a2a38f1482c92459400f93dd35c18c0386cb994;
+        path=/; HttpOnly
+      X-Request-Id:
+      - c0e4cfe7-69a3-4c1a-939a-6bd465f5c6be
+      X-Runtime:
+      - '0.835451'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: <html><body>You are being <a href="http://localhost:3000/activities">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 21:29:11 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/activities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like
+        Gecko) Chrome/15.0.853.0 Safari/535.2
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Cookie:
+      - _strava_curious_session=cGZyV3B2N1JUY2ZObkhBNkNja21HRUNrL1UwbW5vNHIwUFpyR3grRDhZM29iUU02Z2tpZEd2U0FZZ0R6Znp2NDNRdHZ0L1JVOFB2OE1Mcnk0N1QvOUE9PS0tZkFIdVc3USt3RlZJTWc2K1dZdU9IQT09--4a2a38f1482c92459400f93dd35c18c0386cb994
+      Host:
+      - localhost:3000
+      Http-Referer:
+      - https://www.strava.com/login
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - text/html; charset=utf-8
+      Etag:
+      - W/"ffec53fa50ca8c7e9ec2e288c62327e9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _strava_curious_session=OWREQ201TkE4VmMwY0YrRWxyWndoM3ZoVTk4UVNkNVVxV0pSY2xXUDhZblBXTnlNZ1F4T1ZWdE5lQzQ2RjNadlNSTCt4dk91dCtwVll3Wkd1dTZyNnhVYVFmalVDOWJ3SjNLQnNGVmZtczMzQVA3dW9GdG0xYXNFaHBFRkpZTXlSOE9tMS8zbXQ4cWs2alZoVVlEOWdmUjlzK29ibW5oUk8zaHp2T3NYSXJJPS0talYyRlRtMWRIdloySjhxanhCTE05Zz09--1e42739cbedc815ff3239bbb8e7a9054805dbf9b;
+        path=/; HttpOnly
+      X-Request-Id:
+      - f362536a-4980-42c6-8937-8db9b9fd9761
+      X-Runtime:
+      - '0.491419'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html>\n  <head>\n    <title>StravaCurious</title>\n
+        \   <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\"
+        content=\"0BmnV6P5WAeNM4c+/ESEsYCfc217lqDvgEyPg+WftbQzWanxZtwa+92ROYyqdQqdbfjovzPFuo7EIBlvSDaaPw==\"
+        />\n    <link href=\"https://fonts.googleapis.com/css?family=Antic+Slab|Quicksand\"
+        rel=\"stylesheet\">\n    <link rel=\"stylesheet\" media=\"all\" href=\"/assets/screen.self-e667f9b0b305e59aa6f0fc083c80c64ff1937a1908d3a4e0c78d5b6ce3e6556c.css?body=1\"
+        />\n<link rel=\"stylesheet\" media=\"all\" href=\"/assets/application.self-afb36eb6d6e4b0c38ddba594ccf8a1055fc00e3f4d9d8c0b810d150873823004.css?body=1\"
+        />\n    <script src=\"/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1\"></script>\n<script
+        src=\"/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1\"></script>\n<script
+        src=\"/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1\"></script>\n<script
+        src=\"/assets/action_cable.self-17ebe4af84895fa064a951f57476799066237d7bb5dc4dc351a8b01cca19cce9.js?body=1\"></script>\n<script
+        src=\"/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1\"></script>\n<script
+        src=\"/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1\"></script>\n
+        \ </head>\n\n  <body>\n    <nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n
+        \   <!-- Brand and toggle get grouped for better mobile display -->\n    <div
+        class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle
+        collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\"
+        aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n
+        \       <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n
+        \       <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\"
+        href=\"/\">Oh So Curious</a>\n    </div>\n\n    <!-- Collect the nav links,
+        forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse\"
+        id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav\">\n
+        \     <ul class=\"nav navbar-nav navbar-right\">\n        <li class=\"dropdown\">\n
+        \         <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"
+        role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">User <span
+        class=\"caret\"></span></a>\n          <ul class=\"dropdown-menu\">\n            <li><a
+        href=\"/profile\">Profile</a></li>\n            <li role=\"separator\" class=\"divider\"></li>\n
+        \           <li><a href=\"/activities\">My Activities</a></li>\n          </ul>\n
+        \       </li>\n      </ul>\n    </div><!-- /.navbar-collapse -->\n  </div><!--
+        /.container-fluid -->\n</nav>\n\n    <div class=\"container\">\n      <div
+        class=\"wrapper\">\n  <h1 class=\"text-center\">My Activities</h1>\n  \n  <hr
+        class=\"divider\" />\n  \n    <div class=\"list-group\">\n      <a class=\"list-group-item\"
+        href=\"/activities/851250245\">Morning Ride</a>\n      <div class=\"list-group\">\n
+        \       <div class=\"list-group-item\">\n          <p class=\"list-group-item-text\">Distance
+        (meters)</p>\n          <h4 class=\"list-group-item-heading\">12904.9</h4>\n
+        \         <p class=\"list-group-item-text\">Activity</p>\n          <h4 class=\"list-group-item-heading\">Ride</h4>\n
+        \         <p class=\"list-group-item-text\">Date</p>\n          <h4 class=\"list-group-item-heading\">2017-01-31T07:45:34Z</h4>\n
+        \       </div>\n      </div>\n    </div>\n    <div class=\"list-group\">\n
+        \     <a class=\"list-group-item\" href=\"/activities/849984063\">Afternoon
+        Ride</a>\n      <div class=\"list-group\">\n        <div class=\"list-group-item\">\n
+        \         <p class=\"list-group-item-text\">Distance (meters)</p>\n          <h4
+        class=\"list-group-item-heading\">12872.9</h4>\n          <p class=\"list-group-item-text\">Activity</p>\n
+        \         <h4 class=\"list-group-item-heading\">Ride</h4>\n          <p class=\"list-group-item-text\">Date</p>\n
+        \         <h4 class=\"list-group-item-heading\">2017-01-30T17:04:24Z</h4>\n
+        \       </div>\n      </div>\n    </div>\n    <div class=\"list-group\">\n
+        \     <a class=\"list-group-item\" href=\"/activities/849983403\">Morning
+        Ride</a>\n      <div class=\"list-group\">\n        <div class=\"list-group-item\">\n
+        \         <p class=\"list-group-item-text\">Distance (meters)</p>\n          <h4
+        class=\"list-group-item-heading\">12944.5</h4>\n          <p class=\"list-group-item-text\">Activity</p>\n
+        \         <h4 class=\"list-group-item-heading\">Ride</h4>\n          <p class=\"list-group-item-text\">Date</p>\n
+        \         <h4 class=\"list-group-item-heading\">2017-01-30T08:10:11Z</h4>\n
+        \       </div>\n      </div>\n    </div>\n  \n  \n  <!-- Button trigger modal
+        -->\n  <button type=\"button\" class=\"btn btn-primary btn-lg\" data-toggle=\"modal\"
+        data-target=\"#myModal\">\n    Launch demo modal\n  </button>\n  \n  <!--
+        Modal -->\n  <div class=\"modal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\"
+        aria-labelledby=\"myModalLabel\">\n    <div class=\"modal-dialog\" role=\"document\">\n
+        \     <div class=\"modal-content\">\n        <div class=\"modal-header\">\n
+        \         <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span
+        aria-hidden=\"true\">&times;</span></button>\n          <h4 class=\"modal-title\"
+        id=\"myModalLabel\">Modal title</h4>\n        </div>\n        <div class=\"modal-body\">\n
+        \         ...\n        </div>\n        <div class=\"modal-footer\">\n          <button
+        type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n
+        \         <button type=\"button\" class=\"btn btn-primary\">Save changes</button>\n
+        \       </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n    <div>\n
+        \ </body>\n</html>\n"
+    http_version: 
+  recorded_at: Wed, 01 Feb 2017 21:29:12 GMT
+recorded_with: VCR 3.0.3
