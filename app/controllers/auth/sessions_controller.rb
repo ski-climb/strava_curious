@@ -11,6 +11,6 @@ class Auth::SessionsController < ApplicationController
       user.update(token: user_data["access_token"])
     end
 
-    redirect_to dashboard_path
+    redirect_to activities_path
   end
 end
