@@ -1,0 +1,20 @@
+<h1>Activity: <%= @activity["name"] %> on <%= @activity["start_date_local"] %></h1>
+
+<div class="list-group">
+  <div class="list-group-item">
+    <p class="list-group-item-text">Distance (meters)</p>
+    <h3 class="list-group-item-heading"><%= @activity["distance"] %></h3>
+    <p class="list-group-item-text">Duration (seconds)</p>
+    <h3 class="list-group-item-heading"><%= @activity["elapsed_time"] %></h3>
+    <p class="list-group-item-text">Elevation Gain (meters)</p>
+    <h3 class="list-group-item-heading"><%= @activity["total_elevation_gain"] %></h3>
+    <p class="list-group-item-text">Average Speed (m/s)</p>
+    <h3 class="list-group-item-heading"><%= @activity["average_speed"] %></h3>
+    <p class="list-group-item-text">Max Speed (m/s)</p>
+    <h3 class="list-group-item-heading"><%= @activity["max_speed"] %></h3>
+    <p class="list-group-item-text">Average Heart Rate (bpm)</p>
+    <h3 class="list-group-item-heading"><%= @activity["average_heartrate"] %></h3>
+    <p class="list-group-item-text">Max Heart Rate (bpm)</p>
+    <h3 class="list-group-item-heading"><%= @activity["max_heartrate"] %></h3>
+  </div>
+</div>
