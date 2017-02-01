@@ -7,6 +7,7 @@ require 'spec_helper'
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 require 'rack_session_access/capybara'
+require 'vcr'
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -27,9 +28,24 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.maintain_test_schema!
 
+VCR.configure do |config|
+  config.cassette_library_dir = Rails.root.join("spec", "fixtures", "vcr_cassettes")
+  config.hook_into :webmock
+  config.filter_sensitive_data('<STRAVA_CLIENT_ID>') { ENV["STRAVA_CLIENT_ID"] }
+  config.filter_sensitive_data('<STRAVA_CLIENT_SECRET>') { ENV["STRAVA_CLIENT_SECRET"] }
+  config.filter_sensitive_data('<STRAVA_ACCESS_TOKEN>') { ENV["STRAVA_ACCESS_TOKEN"] }
+  config.filter_sensitive_data('<ACCESS_TOKEN>') { ENV["ACCESS_TOKEN"] }
+end
+
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
+
+  # Config for VCR
+  config.around(:each, :vcr) do |example|
+    name = example.metadata[:full_description].split(/\s+/, 2).join("/").underscore.gsub(/[^\w\/]+/, "_")
+    VCR.use_cassette(name) { example.call }
+  end
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
