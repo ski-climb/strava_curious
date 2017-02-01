@@ -1,5 +1,7 @@
 <h1>Welcome, <%= current_user.name %>!</h1>
 
+<hr class="divider" />
+
 <% @activities.each do |activity| %>
   <div class="list-group">
     <%= link_to activity["name"], dashboard_path, class: "list-group-item" %>

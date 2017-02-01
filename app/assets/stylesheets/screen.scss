@@ -1,2 +1,39 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$header_font: 'Antic Slab', serif;
+$main_font: 'Quicksand', sans-serif;
+
+body {
+  font-family: $main_font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header_font;
+}
+
+a:hover,
+a.list-group-item:hover {
+  color: #FC4C02;
+}
+
+.navbar-inverse {
+  .navbar-brand,
+  .navbar-brand:hover {
+    color: #FC4C02;
+  }
+
+  .navbar-nav > li > a:hover {
+    color: #FC4C02;
+  }
+}
+
+.dropdown-menu > li > a:hover {
+  color: #FC4C02;
+}
+
+.divider {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(90deg, #FFF, #FC4C02, #FFF);
+}
