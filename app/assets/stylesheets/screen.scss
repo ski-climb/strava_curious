@@ -3,37 +3,60 @@
 
 $header_font: 'Antic Slab', serif;
 $main_font: 'Quicksand', sans-serif;
+$strava_orange: #FC4C02;
 
 body {
   font-family: $main_font;
+  background: url(background_mountain.JPG) no-repeat center;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header_font;
 }
 
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.activity_header {
+  color: $strava_orange;
+  padding: 0 20px
+}
+
 a:hover,
 a.list-group-item:hover {
-  color: #FC4C02;
+  color: $strava_orange;
+  text-decoration: none;
 }
 
 .navbar-inverse {
   .navbar-brand,
   .navbar-brand:hover {
-    color: #FC4C02;
+    color: $strava_orange;
   }
 
   .navbar-nav > li > a:hover {
-    color: #FC4C02;
+    color: $strava_orange;
   }
 }
 
 .dropdown-menu > li > a:hover {
-  color: #FC4C02;
+  color: $strava_orange;
 }
 
 .divider {
   border: 0;
   height: 2px;
-  background-image: linear-gradient(90deg, #FFF, #FC4C02, #FFF);
+  background-image: linear-gradient(90deg, #FFF, $strava_orange, #FFF);
+}
+
+.btn-orange {
+  background-color: $strava_orange;
+  color: white;
+  display: block;
+  margin: 10% auto 3%;
+  width: 270px;
+  font-size: 2em;
 }
