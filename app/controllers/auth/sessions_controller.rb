@@ -2,7 +2,7 @@ class Auth::SessionsController < ApplicationController
   skip_before_action :require_login, only: [:create]
 
   def create
-    strava_request = "https://www.strava.com/oauth/token?client_id=#{ENV["strava_client_id"]}&client_secret=#{ENV["strava_client_secret"]}&code=#{params["code"]}"
+    strava_request = "https://www.strava.com/oauth/token?client_id=#{ENV["STRAVA_CLIENT_ID"]}&client_secret=#{ENV["STRAVA_CLIENT_SECRET"]}&code=#{params["code"]}"
     strava_response = Faraday.post(strava_request)
     user_data = JSON.parse(strava_response.body)
 
