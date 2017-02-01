@@ -5,8 +5,8 @@ Rails.application.routes.draw do
     get "/strava/callback", to: "sessions#create"
   end
 
-  resource :dashboard, only: [:show]
-  resources :activities, only: [:show]
+  resource :profile, only: [:show]
+  resources :activities, only: [:show, :index]
 
   get "/:does_not_exist", to: "nawwal#home"
 end
