@@ -4,15 +4,15 @@
 
 <% @activities.each do |activity| %>
   <div class="list-group">
-    <%= link_to activity["name"], dashboard_path, class: "list-group-item" %>
+    <%= link_to activity["name"], activity_path(activity["id"]), class: "list-group-item" %>
     <div class="list-group">
       <div class="list-group-item">
-        <p class="list-group-item-text">Distance(meters)</p>
+        <p class="list-group-item-text">Distance (meters)</p>
         <h4 class="list-group-item-heading"><%= activity["distance"] %></h4>
         <p class="list-group-item-text">Activity</p>
         <h4 class="list-group-item-heading"><%= activity["type"] %></h4>
         <p class="list-group-item-text">Date</p>
-        <h4 class="list-group-item-heading"><%= activity["start_date"] %></h4>
+        <h4 class="list-group-item-heading"><%= activity["start_date_local"] %></h4>
       </div>
     </div>
   </div>
