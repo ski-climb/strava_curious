@@ -9,7 +9,7 @@ describe "user who is not logged in" do
   end
 
   scenario "user gets redirected to home page when they try to visit any other page" do
-    visit dashboard_path
+    visit activities_path
 
     expect(page).to have_current_path root_path
   end
