@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "Viewing a user's profile page" do
   context "a user has activities" do
-    let!(:strava_user) { create(:user, :strava) }
+    let!(:strava_user) { build(:user, :strava) }
     let!(:total_distance) { 38723 }
     scenario "user sees lifetime stats", :vcr => true do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(strava_user)
