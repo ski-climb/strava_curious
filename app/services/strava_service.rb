@@ -5,6 +5,11 @@ class StravaService
     JSON.parse(activities.body, symbolize_names: true)
   end
 
+  def self.friends_activities(token)
+    activities = conn.get("/api/v3/activities/following", {access_token: token})
+    JSON.parse(activities.body, symbolize_names: true)
+  end
+
   def self.activity(id, token)
     activity = conn.get("/api/v3/activities/#{id}", {access_token: token})
     JSON.parse(activity.body, symbolize_names: true)

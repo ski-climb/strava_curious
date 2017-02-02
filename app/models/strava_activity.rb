@@ -26,8 +26,8 @@ class StravaActivity
   end
 
   def self.activities(token)
-    activities = StravaService.activities(token)
-    activities.map do |raw_activity|
+    raw_activities = StravaService.activities(token)
+    raw_activities.map do |raw_activity|
       self.new(raw_activity)
     end
   end
@@ -35,5 +35,12 @@ class StravaActivity
   def self.activity(activity_id, token)
     raw_activity = StravaService.activity(activity_id, token)
     self.new(raw_activity)
+  end
+
+  def self.friends_activities(token)
+    raw_activities = StravaService.friends_activities(token)
+    raw_activities.map do |raw_activity|
+      self.new(raw_activity)
+    end
   end
 end
