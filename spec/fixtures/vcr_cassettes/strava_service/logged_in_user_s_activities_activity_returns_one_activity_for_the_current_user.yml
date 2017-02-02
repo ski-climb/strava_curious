@@ -23,11 +23,11 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 02 Feb 2017 04:16:34 GMT
+      - Thu, 02 Feb 2017 20:31:47 GMT
       Etag:
       - W/"3d417b472d4088fde56af0c5862aecd4"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTU1MDE5NTUxNDJlZDcyMDIzNGQzYTI0NWNhOWE1MjBjBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--35ce568ebf334ea2aa88e1e3a7be556f89e2de2b;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTJmNDE5ODQ2MGQ5OTBhYmVlYmVlMmJiM2M3NGVlNTI4BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--c7dac61d512a518467993d4029d35f5297c3af84;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
@@ -36,9 +36,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '10,50'
+      - '10,228'
       X-Request-Id:
-      - cb120c33abb1b438576bd8196fa32c1b
+      - e302dedc97e1927695631bb5d45dd191
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
@@ -77,5 +77,5 @@ http_interactions:
         States","private":false,"hazardous":false,"starred":false},"kom_rank":null,"pr_rank":2,"achievements":[{"type_id":3,"type":"pr","rank":2}],"hidden":false}],"splits_metric":[{"distance":1006.9,"elapsed_time":182,"elevation_difference":-16.0,"moving_time":182,"split":1,"average_heartrate":133.8846153846154,"average_speed":5.53,"pace_zone":0},{"distance":1001.7,"elapsed_time":210,"elevation_difference":-10.0,"moving_time":138,"split":2,"average_heartrate":138.80434782608697,"average_speed":7.26,"pace_zone":0},{"distance":998.3,"elapsed_time":107,"elevation_difference":-13.0,"moving_time":107,"split":3,"average_heartrate":150.71028037383178,"average_speed":9.33,"pace_zone":0},{"distance":994.0,"elapsed_time":113,"elevation_difference":-7.0,"moving_time":113,"split":4,"average_heartrate":152.76106194690266,"average_speed":8.8,"pace_zone":0},{"distance":1009.1,"elapsed_time":189,"elevation_difference":-13.0,"moving_time":123,"split":5,"average_heartrate":145.65853658536585,"average_speed":8.2,"pace_zone":0},{"distance":991.0,"elapsed_time":118,"elevation_difference":-10.0,"moving_time":118,"split":6,"average_heartrate":149.61864406779662,"average_speed":8.4,"pace_zone":0},{"distance":999.8,"elapsed_time":137,"elevation_difference":-7.0,"moving_time":137,"split":7,"average_heartrate":145.47445255474452,"average_speed":7.3,"pace_zone":0},{"distance":1007.1,"elapsed_time":113,"elevation_difference":-26.0,"moving_time":113,"split":8,"average_heartrate":136.02654867256638,"average_speed":8.91,"pace_zone":0},{"distance":993.2,"elapsed_time":110,"elevation_difference":-20.0,"moving_time":110,"split":9,"average_heartrate":131.3272727272727,"average_speed":9.03,"pace_zone":0},{"distance":1002.0,"elapsed_time":115,"elevation_difference":-2.0,"moving_time":115,"split":10,"average_heartrate":149.70434782608694,"average_speed":8.71,"pace_zone":0},{"distance":999.7,"elapsed_time":113,"elevation_difference":-4.0,"moving_time":113,"split":11,"average_heartrate":156.13274336283186,"average_speed":8.85,"pace_zone":0},{"distance":999.8,"elapsed_time":122,"elevation_difference":-1.0,"moving_time":122,"split":12,"average_heartrate":153.5655737704918,"average_speed":8.2,"pace_zone":0},{"distance":902.3,"elapsed_time":168,"elevation_difference":7.0,"moving_time":168,"split":13,"average_heartrate":165.69461077844312,"average_speed":5.37,"pace_zone":0}],"splits_standard":[{"distance":1610.8,"elapsed_time":258,"elevation_difference":-23.0,"moving_time":258,"split":1,"average_heartrate":137.7543103448276,"average_speed":6.24,"pace_zone":0},{"distance":1613.9,"elapsed_time":265,"elevation_difference":-19.0,"moving_time":193,"split":2,"average_heartrate":144.84455958549222,"average_speed":8.36,"pace_zone":0},{"distance":1606.5,"elapsed_time":257,"elevation_difference":-16.0,"moving_time":191,"split":3,"average_heartrate":150.13612565445027,"average_speed":8.41,"pace_zone":0},{"distance":1611.8,"elapsed_time":206,"elevation_difference":-15.0,"moving_time":206,"split":4,"average_heartrate":145.14563106796118,"average_speed":7.82,"pace_zone":0},{"distance":1610.2,"elapsed_time":189,"elevation_difference":-29.0,"moving_time":189,"split":5,"average_heartrate":141.15343915343917,"average_speed":8.52,"pace_zone":0},{"distance":1609.2,"elapsed_time":179,"elevation_difference":-20.0,"moving_time":179,"split":6,"average_heartrate":137.70391061452514,"average_speed":8.99,"pace_zone":0},{"distance":1610.9,"elapsed_time":193,"elevation_difference":-6.0,"moving_time":193,"split":7,"average_heartrate":154.91709844559585,"average_speed":8.35,"pace_zone":0},{"distance":1606.5,"elapsed_time":236,"elevation_difference":6.0,"moving_time":236,"split":8,"average_heartrate":161.67372881355934,"average_speed":6.81,"pace_zone":0},{"distance":25.1,"elapsed_time":14,"elevation_difference":0.0,"moving_time":14,"split":9,"average_heartrate":164.69230769230768,"average_speed":1.79,"pace_zone":0}],"laps":[{"id":2601032452,"resource_state":2,"name":"Lap
         1","activity":{"id":851250245,"resource_state":1},"athlete":{"id":9685944,"resource_state":1},"elapsed_time":1799,"moving_time":1799,"start_date":"2017-01-31T14:45:34Z","start_date_local":"2017-01-31T07:45:34Z","distance":12907.0,"start_index":0,"end_index":1797,"total_elevation_gain":21.0,"average_speed":7.2,"max_speed":13.5,"device_watts":false,"average_heartrate":147.1,"max_heartrate":172.0,"lap_index":1,"split":1}],"partner_logo_url":null,"partner_brand_tag":null,"photos":{"primary":null,"count":0},"device_name":"Suunto","embed_token":"19fbd76b791d311d5a80c3e316b0f6bba4da593b"}'
     http_version: 
-  recorded_at: Thu, 02 Feb 2017 04:16:34 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:47 GMT
 recorded_with: VCR 3.0.3

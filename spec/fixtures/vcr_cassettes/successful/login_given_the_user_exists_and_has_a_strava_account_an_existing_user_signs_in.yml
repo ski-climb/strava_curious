@@ -56,7 +56,7 @@ http_interactions:
       Content-Type:
       - text/html
       Date:
-      - Wed, 01 Feb 2017 21:29:08 GMT
+      - Thu, 02 Feb 2017 20:31:44 GMT
       Location:
       - http://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&response_type=code&redirect_uri=http://localhost:3000/auth/strava/callback&scope=view_private
       Content-Length:
@@ -68,7 +68,7 @@ http_interactions:
       string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
         bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 21:29:08 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:44 GMT
 - request:
     method: get
     uri: http://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&redirect_uri=http://localhost:3000/auth/strava/callback&response_type=code&scope=view_private
@@ -117,7 +117,7 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Wed, 01 Feb 2017 21:29:08 GMT
+      - Thu, 02 Feb 2017 20:31:44 GMT
       Location:
       - https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&response_type=code&redirect_uri=http://localhost:3000/auth/strava/callback&scope=view_private
       Status:
@@ -125,7 +125,7 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - 852f08511e736c9da8315c32865c7d14
+      - 640b9212db8f936c8118690618bc0eb4
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
@@ -136,7 +136,7 @@ http_interactions:
       encoding: UTF-8
       string: <html><body>You are being <a href="https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&amp;response_type=code&amp;redirect_uri=http://localhost:3000/auth/strava/callback&amp;scope=view_private">redirected</a>.</body></html>
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 21:29:08 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:44 GMT
 - request:
     method: get
     uri: https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&redirect_uri=http://localhost:3000/auth/strava/callback&response_type=code&scope=view_private
@@ -185,18 +185,18 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Wed, 01 Feb 2017 21:29:09 GMT
+      - Thu, 02 Feb 2017 20:31:44 GMT
       Location:
       - https://www.strava.com/login
       Set-Cookie:
-      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPg%3D%3D--550698d33ddec4684d58eec197bc9786cf372a1f;
+      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJWQ1OGZmMTY5NzM2YWU1NGEzZTM1ZWE1ZmMyYjExZjFhBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPg%3D%3D--d11c2cebb1bd9bd8086d7baabe2cf594249ce9b1;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 302 Found
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - caa0461bf615278dbfff1d6d179be202
+      - 20da55f74d5551fd1a7c841c85c3d5b4
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
@@ -207,7 +207,7 @@ http_interactions:
       encoding: UTF-8
       string: <html><body>You are being <a href="https://www.strava.com/login">redirected</a>.</body></html>
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 21:29:09 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:44 GMT
 - request:
     method: get
     uri: https://www.strava.com/login
@@ -227,7 +227,7 @@ http_interactions:
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPg%3D%3D--550698d33ddec4684d58eec197bc9786cf372a1f
+      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJWQ1OGZmMTY5NzM2YWU1NGEzZTM1ZWE1ZmMyYjExZjFhBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPg%3D%3D--d11c2cebb1bd9bd8086d7baabe2cf594249ce9b1
       Host:
       - www.strava.com
       Referer:
@@ -260,150 +260,151 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Wed, 01 Feb 2017 21:29:09 GMT
+      - Thu, 02 Feb 2017 20:31:45 GMT
       Etag:
-      - W/"e1bd542f8530ddc4394409f275fadad2"
+      - W/"023d75441d9b56e3942d5a163c22159f"
       Set-Cookie:
-      - _strava3_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPkkiEF9jc3JmX3Rva2VuBjsARkkiMTNIK1RYc3BFT3g0NnJaNGsrK1JtRTE3UkJLNWsxbVlXNzZEdW9JRjFnVXc9BjsARg%3D%3D--367cb32cd8ebcf4ccf4306aa9554a43aeb096d04;
+      - _strava3_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFVEkiJWQ1OGZmMTY5NzM2YWU1NGEzZTM1ZWE1ZmMyYjExZjFhBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPkkiEF9jc3JmX3Rva2VuBjsARkkiMUFVSlp4RTMrdTFQaWZCcU4wcTJ4YUJRVmlNamRya0ZmWXFLbEdYVnFheDA9BjsARg%3D%3D--96f2e658684879d295575f43a22f8435be2a360c;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - 5b75012fe533443c9f6c3cd9d125e74e
+      - c9955320322addc6a8a144a41c2fb815
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '5175'
+      - '5180'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        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
+        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
+        z+E2AAA=
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 21:29:09 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:45 GMT
 - request:
     method: post
     uri: https://www.strava.com/session
     body:
       encoding: UTF-8
-      string: utf8=%E2%9C%93&authenticity_token=3H%2BTXspEOx46rZ4k%2B%2BRmE17RBK5k1mYW76DuoIF1gUw%3D&plan=&email=nbe105%40gmail.com&password=CTizPdRhb2yumFkpqiDX2etjBPPPXYqvYFMQdyGs
+      string: utf8=%E2%9C%93&authenticity_token=AUJZxE3%2Bu1PifBqN0q2xaBQViMjdrkFfYqKlGXVqax0%3D&plan=&email=nbe105%40gmail.com&password=CTizPdRhb2yumFkpqiDX2etjBPPPXYqvYFMQdyGs
     headers:
       Accept-Encoding:
       - gzip,deflate,identity
@@ -417,7 +418,7 @@ http_interactions:
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - _strava3_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPkkiEF9jc3JmX3Rva2VuBjsARkkiMTNIK1RYc3BFT3g0NnJaNGsrK1JtRTE3UkJLNWsxbVlXNzZEdW9JRjFnVXc9BjsARg%3D%3D--367cb32cd8ebcf4ccf4306aa9554a43aeb096d04
+      - _strava3_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFVEkiJWQ1OGZmMTY5NzM2YWU1NGEzZTM1ZWE1ZmMyYjExZjFhBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIiJyZWRpcmVjdF9hZnRlcl9hdXRoZW50aWNhdGlvbgY7AEYiAX4vb2F1dGgvYXV0aG9yaXplP2NsaWVudF9pZD0xNTkzOCZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPWh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hdXRoL3N0cmF2YS9jYWxsYmFjayZzY29wZT12aWV3X3ByaXZhdGVJIh1yZWZlcnJpbmdfYXBwbGljYXRpb25faWQGOwBGaQJCPkkiEF9jc3JmX3Rva2VuBjsARkkiMUFVSlp4RTMrdTFQaWZCcU4wcTJ4YUJRVmlNamRya0ZmWXFLbEdYVnFheDA9BjsARg%3D%3D--96f2e658684879d295575f43a22f8435be2a360c
       Host:
       - www.strava.com
       Referer:
@@ -435,7 +436,7 @@ http_interactions:
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
-      - '167'
+      - '163'
       Http-Referer:
       - https://www.strava.com/login
       Connection:
@@ -452,20 +453,20 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Wed, 01 Feb 2017 21:29:10 GMT
+      - Thu, 02 Feb 2017 20:31:45 GMT
       Location:
       - https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&response_type=code&redirect_uri=http://localhost:3000/auth/strava/callback&scope=view_private
       Set-Cookie:
-      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIhBfY3NyZl90b2tlbgY7AEZJIjEzSCtUWHNwRU94NDZyWjRrKytSbUUxN1JCSzVrMW1ZVzc2RHVvSUYxZ1V3PQY7AEZJIgdpZAY7AEZpA7jLkw%3D%3D--603e2ae7e9fe0ee5ebfec46264885debb5e93cea;
+      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJWQ1OGZmMTY5NzM2YWU1NGEzZTM1ZWE1ZmMyYjExZjFhBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIhBfY3NyZl90b2tlbgY7AEZJIjFBVUpaeEUzK3UxUGlmQnFOMHEyeGFCUVZpTWpkcmtGZllxS2xHWFZxYXgwPQY7AEZJIgdpZAY7AEZpA7jLkw%3D%3D--f510750aae3a4894d9931066a77242d76253915b;
         domain=strava.com; path=/; HttpOnly
-      - _strava4_session=ad770s73mal421qr94tg5tcgsf0gk868; domain=strava.com; path=/;
+      - _strava4_session=c2r2v9urb7nkacrrq4436umikbd5o5k1; domain=strava.com; path=/;
         HttpOnly
       Status:
       - 302 Found
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - bdde42d5186b625736e33caa32e80537
+      - 462d2f19414faad3193b12a848444be1
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
@@ -476,7 +477,7 @@ http_interactions:
       encoding: UTF-8
       string: <html><body>You are being <a href="https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&amp;response_type=code&amp;redirect_uri=http://localhost:3000/auth/strava/callback&amp;scope=view_private">redirected</a>.</body></html>
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 21:29:10 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:45 GMT
 - request:
     method: get
     uri: https://www.strava.com/oauth/authorize?client_id=<STRAVA_CLIENT_ID>&redirect_uri=http://localhost:3000/auth/strava/callback&response_type=code&scope=view_private
@@ -496,8 +497,8 @@ http_interactions:
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJTc0M2UwYWM4Y2E2YzhhODNjNjgzMmUwODY4ZjA3Y2ZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIhBfY3NyZl90b2tlbgY7AEZJIjEzSCtUWHNwRU94NDZyWjRrKytSbUUxN1JCSzVrMW1ZVzc2RHVvSUYxZ1V3PQY7AEZJIgdpZAY7AEZpA7jLkw%3D%3D--603e2ae7e9fe0ee5ebfec46264885debb5e93cea;
-        _strava4_session=ad770s73mal421qr94tg5tcgsf0gk868
+      - _strava3_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJWQ1OGZmMTY5NzM2YWU1NGEzZTM1ZWE1ZmMyYjExZjFhBjsAVEkiEGNsZWFyX2NsaWNrBjsARlRJIhBfY3NyZl90b2tlbgY7AEZJIjFBVUpaeEUzK3UxUGlmQnFOMHEyeGFCUVZpTWpkcmtGZllxS2xHWFZxYXgwPQY7AEZJIgdpZAY7AEZpA7jLkw%3D%3D--f510750aae3a4894d9931066a77242d76253915b;
+        _strava4_session=c2r2v9urb7nkacrrq4436umikbd5o5k1
       Host:
       - www.strava.com
       Referer:
@@ -528,15 +529,15 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Wed, 01 Feb 2017 21:29:11 GMT
+      - Thu, 02 Feb 2017 20:31:45 GMT
       Location:
-      - http://localhost:3000/auth/strava/callback?state=&code=a15b2ee634392546d6c560af628241dd2b463508
+      - http://localhost:3000/auth/strava/callback?state=&code=4cd6c3068b8e93ef18e5a2aa4ef0edf04a0c1c6e
       Status:
       - 302 Found
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - 9367ad88c9d5c07ee82d0b70ed97ddbf
+      - 31a546a02fa834810deadd6781eccbbc
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
@@ -545,12 +546,12 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: <html><body>You are being <a href="http://localhost:3000/auth/strava/callback?state=&amp;code=a15b2ee634392546d6c560af628241dd2b463508">redirected</a>.</body></html>
+      string: <html><body>You are being <a href="http://localhost:3000/auth/strava/callback?state=&amp;code=4cd6c3068b8e93ef18e5a2aa4ef0edf04a0c1c6e">redirected</a>.</body></html>
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 21:29:11 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:45 GMT
 - request:
     method: get
-    uri: http://localhost:3000/auth/strava/callback?code=a15b2ee634392546d6c560af628241dd2b463508&state=
+    uri: http://localhost:3000/auth/strava/callback?code=4cd6c3068b8e93ef18e5a2aa4ef0edf04a0c1c6e&state=
     body:
       encoding: US-ASCII
       string: ''
@@ -592,19 +593,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _strava_curious_session=cGZyV3B2N1JUY2ZObkhBNkNja21HRUNrL1UwbW5vNHIwUFpyR3grRDhZM29iUU02Z2tpZEd2U0FZZ0R6Znp2NDNRdHZ0L1JVOFB2OE1Mcnk0N1QvOUE9PS0tZkFIdVc3USt3RlZJTWc2K1dZdU9IQT09--4a2a38f1482c92459400f93dd35c18c0386cb994;
+      - _strava_curious_session=aEM4bjlnd2JqVURUZVp4a1YrMTJRWEdoU3hzc1o0RXRGQlltdm5nRElIOFNtdjY0RnphanFYTEZPN3gzeXV6Z1YydUNmdzN0WXZXcGtFUVJ6YS9Od2c9PS0tRlNkZU1NM1MrQjR5ZFhwYVFLQUVmUT09--d2f39ac75fc3c4bf4111e9018cdbc8438e7b6700;
         path=/; HttpOnly
       X-Request-Id:
-      - c0e4cfe7-69a3-4c1a-939a-6bd465f5c6be
+      - 43086446-d367-46d7-b60c-32b5ed40c2c6
       X-Runtime:
-      - '0.835451'
+      - '0.258507'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: <html><body>You are being <a href="http://localhost:3000/activities">redirected</a>.</body></html>
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 21:29:11 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:45 GMT
 - request:
     method: get
     uri: http://localhost:3000/activities
@@ -624,7 +625,7 @@ http_interactions:
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - _strava_curious_session=cGZyV3B2N1JUY2ZObkhBNkNja21HRUNrL1UwbW5vNHIwUFpyR3grRDhZM29iUU02Z2tpZEd2U0FZZ0R6Znp2NDNRdHZ0L1JVOFB2OE1Mcnk0N1QvOUE9PS0tZkFIdVc3USt3RlZJTWc2K1dZdU9IQT09--4a2a38f1482c92459400f93dd35c18c0386cb994
+      - _strava_curious_session=aEM4bjlnd2JqVURUZVp4a1YrMTJRWEdoU3hzc1o0RXRGQlltdm5nRElIOFNtdjY0RnphanFYTEZPN3gzeXV6Z1YydUNmdzN0WXZXcGtFUVJ6YS9Od2c9PS0tRlNkZU1NM1MrQjR5ZFhwYVFLQUVmUT09--d2f39ac75fc3c4bf4111e9018cdbc8438e7b6700
       Host:
       - localhost:3000
       Http-Referer:
@@ -647,97 +648,132 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Etag:
-      - W/"ffec53fa50ca8c7e9ec2e288c62327e9"
+      - W/"011d83cc2164e0cc38f262989ad508cd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _strava_curious_session=OWREQ201TkE4VmMwY0YrRWxyWndoM3ZoVTk4UVNkNVVxV0pSY2xXUDhZblBXTnlNZ1F4T1ZWdE5lQzQ2RjNadlNSTCt4dk91dCtwVll3Wkd1dTZyNnhVYVFmalVDOWJ3SjNLQnNGVmZtczMzQVA3dW9GdG0xYXNFaHBFRkpZTXlSOE9tMS8zbXQ4cWs2alZoVVlEOWdmUjlzK29ibW5oUk8zaHp2T3NYSXJJPS0talYyRlRtMWRIdloySjhxanhCTE05Zz09--1e42739cbedc815ff3239bbb8e7a9054805dbf9b;
+      - _strava_curious_session=aG1HeFRjWFhzclcxaUxnbmZqSng2L3hMNExILzN5OEFYcmhnYVV4R2h6V1c2YUkwbzZPaXAxZmM2eEFsd0lRZTROeGZMU3BDSFBPTGNRSnY1QlZGb3g2OWh3S1UxblFZd1dLVDU4T1AyalNPRFM2SWxrdXJrMGxtNFpTVGdSeG00QUYzQjIyNStXZFVtajlwQW5lRUV0enNYNm04Q0N4a1lCTnB3akM4c1NZPS0tcGhQcHpaRWJUcW1mL0dnUHFTZzhsZz09--59e6ec6a95fa6a038c1ebe4db96e21e01f39bb4f;
         path=/; HttpOnly
       X-Request-Id:
-      - f362536a-4980-42c6-8937-8db9b9fd9761
+      - 198e2792-a468-4b76-bf9e-96a43f072bb2
       X-Runtime:
-      - '0.491419'
+      - '0.344654'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: "<!DOCTYPE html>\n<html>\n  <head>\n    <title>StravaCurious</title>\n
-        \   <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\"
-        content=\"0BmnV6P5WAeNM4c+/ESEsYCfc217lqDvgEyPg+WftbQzWanxZtwa+92ROYyqdQqdbfjovzPFuo7EIBlvSDaaPw==\"
-        />\n    <link href=\"https://fonts.googleapis.com/css?family=Antic+Slab|Quicksand\"
-        rel=\"stylesheet\">\n    <link rel=\"stylesheet\" media=\"all\" href=\"/assets/screen.self-e667f9b0b305e59aa6f0fc083c80c64ff1937a1908d3a4e0c78d5b6ce3e6556c.css?body=1\"
-        />\n<link rel=\"stylesheet\" media=\"all\" href=\"/assets/application.self-afb36eb6d6e4b0c38ddba594ccf8a1055fc00e3f4d9d8c0b810d150873823004.css?body=1\"
-        />\n    <script src=\"/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1\"></script>\n<script
-        src=\"/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1\"></script>\n<script
-        src=\"/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1\"></script>\n<script
-        src=\"/assets/action_cable.self-17ebe4af84895fa064a951f57476799066237d7bb5dc4dc351a8b01cca19cce9.js?body=1\"></script>\n<script
-        src=\"/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1\"></script>\n<script
-        src=\"/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1\"></script>\n
-        \ </head>\n\n  <body>\n    <nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n
-        \   <!-- Brand and toggle get grouped for better mobile display -->\n    <div
-        class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle
-        collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\"
-        aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n
-        \       <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n
-        \       <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\"
-        href=\"/\">Oh So Curious</a>\n    </div>\n\n    <!-- Collect the nav links,
-        forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse\"
-        id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav\">\n
-        \     <ul class=\"nav navbar-nav navbar-right\">\n        <li class=\"dropdown\">\n
-        \         <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"
-        role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">User <span
-        class=\"caret\"></span></a>\n          <ul class=\"dropdown-menu\">\n            <li><a
-        href=\"/profile\">Profile</a></li>\n            <li role=\"separator\" class=\"divider\"></li>\n
-        \           <li><a href=\"/activities\">My Activities</a></li>\n          </ul>\n
-        \       </li>\n      </ul>\n    </div><!-- /.navbar-collapse -->\n  </div><!--
-        /.container-fluid -->\n</nav>\n\n    <div class=\"container\">\n      <div
-        class=\"wrapper\">\n  <h1 class=\"text-center\">My Activities</h1>\n  \n  <hr
-        class=\"divider\" />\n  \n    <div class=\"list-group\">\n      <a class=\"list-group-item\"
-        href=\"/activities/851250245\">Morning Ride</a>\n      <div class=\"list-group\">\n
-        \       <div class=\"list-group-item\">\n          <p class=\"list-group-item-text\">Distance
-        (meters)</p>\n          <h4 class=\"list-group-item-heading\">12904.9</h4>\n
-        \         <p class=\"list-group-item-text\">Activity</p>\n          <h4 class=\"list-group-item-heading\">Ride</h4>\n
-        \         <p class=\"list-group-item-text\">Date</p>\n          <h4 class=\"list-group-item-heading\">2017-01-31T07:45:34Z</h4>\n
-        \       </div>\n      </div>\n    </div>\n    <div class=\"list-group\">\n
-        \     <a class=\"list-group-item\" href=\"/activities/849984063\">Afternoon
-        Ride</a>\n      <div class=\"list-group\">\n        <div class=\"list-group-item\">\n
-        \         <p class=\"list-group-item-text\">Distance (meters)</p>\n          <h4
-        class=\"list-group-item-heading\">12872.9</h4>\n          <p class=\"list-group-item-text\">Activity</p>\n
-        \         <h4 class=\"list-group-item-heading\">Ride</h4>\n          <p class=\"list-group-item-text\">Date</p>\n
-        \         <h4 class=\"list-group-item-heading\">2017-01-30T17:04:24Z</h4>\n
-        \       </div>\n      </div>\n    </div>\n    <div class=\"list-group\">\n
-        \     <a class=\"list-group-item\" href=\"/activities/849983403\">Morning
-        Ride</a>\n      <div class=\"list-group\">\n        <div class=\"list-group-item\">\n
-        \         <p class=\"list-group-item-text\">Distance (meters)</p>\n          <h4
-        class=\"list-group-item-heading\">12944.5</h4>\n          <p class=\"list-group-item-text\">Activity</p>\n
-        \         <h4 class=\"list-group-item-heading\">Ride</h4>\n          <p class=\"list-group-item-text\">Date</p>\n
-        \         <h4 class=\"list-group-item-heading\">2017-01-30T08:10:11Z</h4>\n
-        \       </div>\n      </div>\n    </div>\n  \n  \n  <!-- Button trigger modal
-        -->\n  <button type=\"button\" class=\"btn btn-primary btn-lg\" data-toggle=\"modal\"
-        data-target=\"#myModal\">\n    Launch demo modal\n  </button>\n  \n  <!--
-        Modal -->\n  <div class=\"modal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\"
-        aria-labelledby=\"myModalLabel\">\n    <div class=\"modal-dialog\" role=\"document\">\n
-        \     <div class=\"modal-content\">\n        <div class=\"modal-header\">\n
-        \         <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span
-        aria-hidden=\"true\">&times;</span></button>\n          <h4 class=\"modal-title\"
-        id=\"myModalLabel\">Modal title</h4>\n        </div>\n        <div class=\"modal-body\">\n
-        \         ...\n        </div>\n        <div class=\"modal-footer\">\n          <button
-        type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n
-        \         <button type=\"button\" class=\"btn btn-primary\">Save changes</button>\n
-        \       </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n    <div>\n
-        \ </body>\n</html>\n"
+      string: |
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>StravaCurious</title>
+            <meta name="csrf-param" content="authenticity_token" />
+        <meta name="csrf-token" content="jqMIxjHJLXSkRZaKttaUH34hlg4Ev3ntr8BUkSr9MTtTGuHZNKPZ/0b4odQGIpL6fwC5pPQYECu1Vr1tXnZcwg==" />
+            <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Quicksand" rel="stylesheet">
+            <link rel="stylesheet" media="all" href="/assets/screen.self-5b1afe2ab39bdae06af678ae395235fb20bc879de2dbc1902dcef03893fa8db0.css?body=1" />
+        <link rel="stylesheet" media="all" href="/assets/application.self-afb36eb6d6e4b0c38ddba594ccf8a1055fc00e3f4d9d8c0b810d150873823004.css?body=1" />
+            <script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1"></script>
+        <script src="/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1"></script>
+        <script src="/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1"></script>
+        <script src="/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1"></script>
+        <script src="/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1"></script>
+        <script src="/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1"></script>
+        <script src="/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1"></script>
+        <script src="/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1"></script>
+        <script src="/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1"></script>
+        <script src="/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1"></script>
+        <script src="/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1"></script>
+        <script src="/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1"></script>
+        <script src="/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1"></script>
+        <script src="/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1"></script>
+        <script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1"></script>
+        <script src="/assets/action_cable.self-17ebe4af84895fa064a951f57476799066237d7bb5dc4dc351a8b01cca19cce9.js?body=1"></script>
+        <script src="/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1"></script>
+        <script src="/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1"></script>
+          </head>
+
+          <body>
+            <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">Oh So Curious</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/profile">Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="/activities">Activities</a></li>
+                    <li><a href="/friends_activities">Friends&#39; Activities</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+            <div class="container">
+              <div class="wrapper">
+          <h1 class="text-center">My Activities</h1>
+
+          <hr class="divider" />
+
+            <div class="list-group">
+              <a class="list-group-item" href="/activities/851250245">Morning Ride</a>
+              <div class="list-group">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Distance (meters)</p>
+                  <h4 class="list-group-item-heading">12904.9</h4>
+                  <p class="list-group-item-text">Activity</p>
+                  <h4 class="list-group-item-heading">Ride</h4>
+                  <p class="list-group-item-text">Date</p>
+                  <h4 class="list-group-item-heading">2017-01-31T07:45:34Z</h4>
+                </div>
+              </div>
+            </div>
+            <div class="list-group">
+              <a class="list-group-item" href="/activities/849984063">Afternoon Ride</a>
+              <div class="list-group">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Distance (meters)</p>
+                  <h4 class="list-group-item-heading">12872.9</h4>
+                  <p class="list-group-item-text">Activity</p>
+                  <h4 class="list-group-item-heading">Ride</h4>
+                  <p class="list-group-item-text">Date</p>
+                  <h4 class="list-group-item-heading">2017-01-30T17:04:24Z</h4>
+                </div>
+              </div>
+            </div>
+            <div class="list-group">
+              <a class="list-group-item" href="/activities/849983403">Morning Ride</a>
+              <div class="list-group">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Distance (meters)</p>
+                  <h4 class="list-group-item-heading">12944.5</h4>
+                  <p class="list-group-item-text">Activity</p>
+                  <h4 class="list-group-item-heading">Ride</h4>
+                  <p class="list-group-item-text">Date</p>
+                  <h4 class="list-group-item-heading">2017-01-30T08:10:11Z</h4>
+                </div>
+              </div>
+            </div>
+        </div>
+
+            <div>
+          </body>
+        </html>
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 21:29:12 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:46 GMT
 recorded_with: VCR 3.0.3

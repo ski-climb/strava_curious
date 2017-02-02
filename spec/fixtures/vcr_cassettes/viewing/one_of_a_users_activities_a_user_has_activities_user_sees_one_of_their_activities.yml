@@ -23,24 +23,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 02 Feb 2017 02:52:49 GMT
+      - Thu, 02 Feb 2017 20:31:41 GMT
       Etag:
       - W/"75fbf8f61a2380015bf2ccadc0215d8c"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBmMjc3ZWZiOWNkNjMwZTFhYmJhNjkyOWZhNDNmZjQ0BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--16d6355fcf038cef1ea15034a125bb5730cdae97;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTM0MjNlNzdiN2NjYTVlMzFlMjc0OGZjMzExZGZhNTg1BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--75543b81125a7c27139e0fc0f981bd4ee4a78e67;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
       Strava-Athlete-Upload-Version:
-      - ce79dcec14a391405f3af5f13050e354
+      - 5fa08ba893851ba675ea94556f7b302f
       X-Frame-Options:
       - DENY
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '1,1'
+      - '4,222'
       X-Request-Id:
-      - 2e18cba2173644cd23009abe818e8870
+      - 248f4e5d4db1f719272e611fd3433b80
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
@@ -60,7 +60,7 @@ http_interactions:
         America/Denver","utc_offset":-25200.0,"start_latlng":[39.708313,-105.087695],"end_latlng":[39.751272,-104.99593],"location_city":null,"location_state":null,"location_country":"United
         States","start_latitude":39.708313,"start_longitude":-105.087695,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a849983403","summary_polyline":"}ojqFb}k`SaApF_LKiAk@o@qGwSTu@oFcUEOmpC}[qAP_e@eEyAb@ihAaCsBB{cA{\\k@YqOg`@Pc@iL_Vak@yAgNwVcH]_C}HuCe^mBmHiNgPyR{AqDxDeBd\\md@vC}A_@uCoTqZ{@w@_@zAtCqA","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":true,"flagged":false,"gear_id":null,"average_speed":7.691,"max_speed":11.9,"average_temp":10.0,"device_watts":false,"has_heartrate":true,"average_heartrate":150.0,"max_heartrate":170.0,"elev_high":1708.0,"elev_low":1573.0,"pr_count":0,"total_photo_count":0,"has_kudoed":false,"workout_type":null}]'
     http_version: 
-  recorded_at: Thu, 02 Feb 2017 02:52:49 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:41 GMT
 - request:
     method: get
     uri: https://www.strava.com/api/v3/activities/849984063?access_token=<ACCESS_TOKEN>
@@ -84,11 +84,11 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 02 Feb 2017 02:52:50 GMT
+      - Thu, 02 Feb 2017 20:31:42 GMT
       Etag:
       - W/"a08ed697c709c9283e243b4e55e25394"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBlNjM2ZTEyZTYxYjU5ODNjNjM3NDhiYzkyYzM2ZjNiBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--66a09e2f6c25af18d7a6a5ae65d85ff281e81f8e;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTU1Y2Y4YmNhOTc3Yjc2Mzc5MjgyYjY4YTg1ODQyNzNhBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--f227a016a76fe5bf030c5904ba8cd73dc4c0dfe6;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
@@ -97,9 +97,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '2,2'
+      - '5,223'
       X-Request-Id:
-      - c6bbbc3f8e768884af2c83835968da7f
+      - 4e921ad6b2acb4c3278441a589f677dd
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
@@ -132,5 +132,5 @@ http_interactions:
         States","private":false,"hazardous":false,"starred":false},"kom_rank":null,"pr_rank":null,"achievements":[],"hidden":false}],"splits_metric":[{"distance":1004.5,"elapsed_time":202,"elevation_difference":-9.0,"moving_time":128,"split":1,"average_heartrate":145.625,"average_speed":7.85,"pace_zone":0},{"distance":996.1,"elapsed_time":133,"elevation_difference":-3.0,"moving_time":133,"split":2,"average_heartrate":152.89473684210526,"average_speed":7.49,"pace_zone":0},{"distance":1005.3,"elapsed_time":123,"elevation_difference":2.0,"moving_time":123,"split":3,"average_heartrate":150.52032520325204,"average_speed":8.17,"pace_zone":0},{"distance":996.4,"elapsed_time":128,"elevation_difference":3.0,"moving_time":128,"split":4,"average_heartrate":149.515625,"average_speed":7.78,"pace_zone":0},{"distance":999.6,"elapsed_time":153,"elevation_difference":18.0,"moving_time":153,"split":5,"average_heartrate":161.50980392156862,"average_speed":6.53,"pace_zone":0},{"distance":1004.3,"elapsed_time":158,"elevation_difference":21.0,"moving_time":158,"split":6,"average_heartrate":162.8227848101266,"average_speed":6.36,"pace_zone":0},{"distance":1000.8,"elapsed_time":140,"elevation_difference":7.0,"moving_time":140,"split":7,"average_heartrate":155.8,"average_speed":7.15,"pace_zone":0},{"distance":994.1,"elapsed_time":193,"elevation_difference":8.0,"moving_time":140,"split":8,"average_heartrate":150.47857142857143,"average_speed":7.1,"pace_zone":0},{"distance":1005.3,"elapsed_time":139,"elevation_difference":8.0,"moving_time":139,"split":9,"average_heartrate":147.85611510791367,"average_speed":7.23,"pace_zone":0},{"distance":994.8,"elapsed_time":125,"elevation_difference":4.0,"moving_time":125,"split":10,"average_heartrate":151.288,"average_speed":7.96,"pace_zone":0},{"distance":1002.9,"elapsed_time":154,"elevation_difference":12.0,"moving_time":154,"split":11,"average_heartrate":159.23376623376623,"average_speed":6.51,"pace_zone":0},{"distance":999.8,"elapsed_time":137,"elevation_difference":5.0,"moving_time":137,"split":12,"average_heartrate":152.5109489051095,"average_speed":7.3,"pace_zone":0},{"distance":869.0,"elapsed_time":361,"elevation_difference":15.0,"moving_time":194,"split":13,"average_heartrate":152.07567567567568,"average_speed":4.48,"pace_zone":0}],"splits_standard":[{"distance":1613.0,"elapsed_time":283,"elevation_difference":-13.0,"moving_time":209,"split":1,"average_heartrate":148.35885167464116,"average_speed":7.72,"pace_zone":0},{"distance":1607.9,"elapsed_time":206,"elevation_difference":5.0,"moving_time":206,"split":2,"average_heartrate":151.84466019417476,"average_speed":7.81,"pace_zone":0},{"distance":1611.2,"elapsed_time":224,"elevation_difference":17.0,"moving_time":224,"split":3,"average_heartrate":156.05803571428572,"average_speed":7.19,"pace_zone":0},{"distance":1612.8,"elapsed_time":241,"elevation_difference":25.0,"moving_time":241,"split":4,"average_heartrate":159.80082987551867,"average_speed":6.69,"pace_zone":0},{"distance":1603.3,"elapsed_time":283,"elevation_difference":14.0,"moving_time":230,"split":5,"average_heartrate":152.2521739130435,"average_speed":6.97,"pace_zone":0},{"distance":1607.9,"elapsed_time":214,"elevation_difference":9.0,"moving_time":214,"split":6,"average_heartrate":149.07943925233644,"average_speed":7.51,"pace_zone":0},{"distance":1617.2,"elapsed_time":232,"elevation_difference":14.0,"moving_time":232,"split":7,"average_heartrate":156.5,"average_speed":6.97,"pace_zone":0},{"distance":1599.6,"elapsed_time":463,"elevation_difference":20.0,"moving_time":296,"split":8,"average_heartrate":153.20905923344947,"average_speed":5.4,"pace_zone":0}],"laps":[{"id":2596866781,"resource_state":2,"name":"Lap
         1","activity":{"id":849984063,"resource_state":1},"athlete":{"id":9685944,"resource_state":1},"elapsed_time":2148,"moving_time":2148,"start_date":"2017-01-31T00:04:24Z","start_date_local":"2017-01-30T17:04:24Z","distance":12867.0,"start_index":0,"end_index":2146,"total_elevation_gain":118.0,"average_speed":6.0,"max_speed":13.4,"device_watts":false,"average_heartrate":153.5,"max_heartrate":173.0,"lap_index":1,"split":1}],"partner_logo_url":null,"partner_brand_tag":null,"photos":{"primary":null,"count":0},"device_name":"Suunto","embed_token":"7c074a03b1531b7307a4f62c51afcc3b50a28c1d"}'
     http_version: 
-  recorded_at: Thu, 02 Feb 2017 02:52:50 GMT
+  recorded_at: Thu, 02 Feb 2017 20:31:42 GMT
 recorded_with: VCR 3.0.3
