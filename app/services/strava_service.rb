@@ -10,4 +10,3 @@ class StravaService
     return JSON.parse(activity.body, symbolize_names: true)
   end
 end
-
