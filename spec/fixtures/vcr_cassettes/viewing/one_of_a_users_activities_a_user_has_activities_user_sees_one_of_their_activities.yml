@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.strava.com/api/v3/athlete/activities?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 02 Feb 2017 02:52:49 GMT
+      Etag:
+      - W/"75fbf8f61a2380015bf2ccadc0215d8c"
+      Set-Cookie:
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBmMjc3ZWZiOWNkNjMwZTFhYmJhNjkyOWZhNDNmZjQ0BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--16d6355fcf038cef1ea15034a125bb5730cdae97;
+        domain=strava.com; path=/; HttpOnly
+      Status:
+      - 200 OK
+      Strava-Athlete-Upload-Version:
+      - ce79dcec14a391405f3af5f13050e354
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '600,30000'
+      X-Ratelimit-Usage:
+      - '1,1'
+      X-Request-Id:
+      - 2e18cba2173644cd23009abe818e8870
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '1312'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":851250245,"resource_state":2,"external_id":"file.fit","upload_id":942509809,"athlete":{"id":9685944,"resource_state":1},"name":"Morning
+        Ride","distance":12904.9,"moving_time":1659,"elapsed_time":1797,"total_elevation_gain":21.0,"type":"Ride","start_date":"2017-01-31T14:45:34Z","start_date_local":"2017-01-31T07:45:34Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-25200.0,"start_latlng":[39.708405,-105.087577],"end_latlng":[39.75132,-104.995809],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.708405,"start_longitude":-105.087577,"achievement_count":8,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a851250245","summary_polyline":"opjqFj|k`SPdCoAvBwLIcAyHoTNe@eFkUSOgpCu[mAD{d@kEqAl@oiAkCu@DodAk\\i@c@sOm`@C_@eLsAi@QqDkFiIa@mFeJkQ{A}NaWaHWeCmIwCq]kBqX}`@_C_FrE{A~Zid@hDqBiA_EgUoYjBo@","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":true,"flagged":false,"gear_id":null,"average_speed":7.779,"max_speed":13.5,"average_temp":10.0,"device_watts":false,"has_heartrate":true,"average_heartrate":147.1,"max_heartrate":172.0,"elev_high":1701.0,"elev_low":1567.0,"pr_count":4,"total_photo_count":0,"has_kudoed":false,"workout_type":null},{"id":849984063,"resource_state":2,"external_id":"file.fit","upload_id":941124892,"athlete":{"id":9685944,"resource_state":1},"name":"Afternoon
+        Ride","distance":12872.9,"moving_time":1852,"elapsed_time":2146,"total_elevation_gain":118.0,"type":"Ride","start_date":"2017-01-31T00:04:24Z","start_date_local":"2017-01-30T17:04:24Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-25200.0,"start_latlng":[39.751716,-104.995757],"end_latlng":[39.708491,-105.087546],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.751716,"start_longitude":-104.995757,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a849984063","summary_polyline":"e_sqFn~y_SeCdEDlB~OdSkFnHbDrIwTnXcD|A`StXlFjLd`@jDvHvCf@nCnV~GzAfNbJlQn@xFfFfILnDtAl@b@|Kd`@Jf@xOt\\d@YpdAdCx@g@phAjEnA?zf@f[`@V|oC`Ud@jAhFtSFlA|GpLA|AyBs@oC","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":true,"flagged":false,"gear_id":null,"average_speed":6.951,"max_speed":13.4,"average_temp":17.0,"device_watts":false,"has_heartrate":true,"average_heartrate":153.5,"max_heartrate":173.0,"elev_high":1688.0,"elev_low":1583.0,"pr_count":0,"total_photo_count":0,"has_kudoed":false,"workout_type":null},{"id":849983403,"resource_state":2,"external_id":"file.fit","upload_id":941124259,"athlete":{"id":9685944,"resource_state":1},"name":"Morning
+        Ride","distance":12944.5,"moving_time":1683,"elapsed_time":1683,"total_elevation_gain":28.0,"type":"Ride","start_date":"2017-01-30T15:10:11Z","start_date_local":"2017-01-30T08:10:11Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-25200.0,"start_latlng":[39.708313,-105.087695],"end_latlng":[39.751272,-104.99593],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.708313,"start_longitude":-105.087695,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a849983403","summary_polyline":"}ojqFb}k`SaApF_LKiAk@o@qGwSTu@oFcUEOmpC}[qAP_e@eEyAb@ihAaCsBB{cA{\\k@YqOg`@Pc@iL_Vak@yAgNwVcH]_C}HuCe^mBmHiNgPyR{AqDxDeBd\\md@vC}A_@uCoTqZ{@w@_@zAtCqA","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":true,"flagged":false,"gear_id":null,"average_speed":7.691,"max_speed":11.9,"average_temp":10.0,"device_watts":false,"has_heartrate":true,"average_heartrate":150.0,"max_heartrate":170.0,"elev_high":1708.0,"elev_low":1573.0,"pr_count":0,"total_photo_count":0,"has_kudoed":false,"workout_type":null}]'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 02:52:49 GMT
+- request:
+    method: get
+    uri: https://www.strava.com/api/v3/activities/849984063?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 02 Feb 2017 02:52:50 GMT
+      Etag:
+      - W/"a08ed697c709c9283e243b4e55e25394"
+      Set-Cookie:
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBlNjM2ZTEyZTYxYjU5ODNjNjM3NDhiYzkyYzM2ZjNiBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--66a09e2f6c25af18d7a6a5ae65d85ff281e81f8e;
+        domain=strava.com; path=/; HttpOnly
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '600,30000'
+      X-Ratelimit-Usage:
+      - '2,2'
+      X-Request-Id:
+      - c6bbbc3f8e768884af2c83835968da7f
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '3821'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":849984063,"resource_state":3,"external_id":"file.fit","upload_id":941124892,"athlete":{"id":9685944,"resource_state":1},"name":"Afternoon
+        Ride","distance":12872.9,"moving_time":1852,"elapsed_time":2146,"total_elevation_gain":118.0,"type":"Ride","start_date":"2017-01-31T00:04:24Z","start_date_local":"2017-01-30T17:04:24Z","timezone":"(GMT-07:00)
+        America/Denver","utc_offset":-25200.0,"start_latlng":[39.751716,-104.995757],"end_latlng":[39.708491,-105.087546],"location_city":null,"location_state":null,"location_country":"United
+        States","start_latitude":39.751716,"start_longitude":-104.995757,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a849984063","polyline":"e_sqFn~y_SE^k@~@k@n@WXOZG^?\\DXFTPZ\\\\|@n@v@r@pAdBr@x@lBlClAxAh@|@L`@C\\QNSNa@f@MVe@h@gA~Ac@f@?b@|@xA^x@b@p@Zn@JVE`@MRm@n@q@`@YLYZmA~@UXM`@SX{@dAo@bAg@f@{BhDoAfBo@dAUNUFq@BUBSHUTE\\J\\FJ|@nABX|@lAVVXNXTp@v@|AvBhAlB`B`C~@`Ad@r@pBlD|@rAN\\J`@PfAN`@TXXRt@Zv@Pj@BnD@fALzAX~@H\\AfAMZ?L@r@P\\BhDD\\@\\FzBn@XLl@`@`Af@p@NXXAt@EZBXPHtAPzC|@bEdAt@Hv@NvBp@rA|@P^Bd@PdAEfABPDP^hADZ@fBF`@L`@PZ`AjANZLb@RfAL`@PVXFXLNZN|@Rd@b@|@PXPRHX?p@NpBH^JZZn@\\h@VfA\\|@RVbAd@PPLVD\\ArA@b@FXJNPFh@BLP@\\@tAHt@FV?zBBdAHXRJVBpDAhA@z@Fd@ExAClICrF@PF@TClC@jCCzB@`@Fp@NPRDH@fCEjBBtACdDAjCFpF?ZBLXIt@CzB@lEEhBAtH@bEA`EA|BEb@FpAC\\@zCExB@bNFZVDv@?XBRREfACtBA|JEhE?hEEtE@|DElG?pA?h@MNEnAD`D@`IB^PTt@BtAAVBPRGnEBdBAhDDhDCjIBlCC`CBTZJX@~ABpNCrAB|@A~ADLJ?bCDrC@bGAbFDlPAvC?nFDpBCvCDfBGxJBdAAlCBlAChHBpBAjC@xDApBGd@CbAL|FA`H@zEF~CL`@\\F\\@t@CfB?jAClK@TJDVC~BB^FLPRTBhCBtAC|ABvCE^CPBlCHRLJXD^HvB?fAHNRD|A?n@AfGBZCVSCi@F_@TKXAPMA]SkBIM[DHLR?UK","resource_state":3,"summary_polyline":"e_sqFn~y_SeCdEDlB~OdSkFnHbDrIwTnXcD|A`StXlFjLd`@jDvHvCf@nCnV~GzAfNbJlQn@xFfFfILnDtAl@b@|Kd`@Jf@xOt\\d@YpdAdCx@g@phAjEnA?zf@f[`@V|oC`Ud@jAhFtSFlA|GpLA|AyBs@oC"},"trainer":false,"commute":false,"manual":false,"private":true,"flagged":false,"gear_id":null,"average_speed":6.951,"max_speed":13.4,"average_temp":17.0,"device_watts":false,"has_heartrate":true,"average_heartrate":153.5,"max_heartrate":173.0,"elev_high":1688.0,"elev_low":1583.0,"pr_count":0,"total_photo_count":0,"has_kudoed":false,"workout_type":null,"description":null,"calories":0,"segment_efforts":[{"id":20719150805,"resource_state":2,"name":"Last
+        Chance!","activity":{"id":849984063,"resource_state":1},"athlete":{"id":9685944,"resource_state":1},"elapsed_time":58,"moving_time":58,"start_date":"2017-01-31T00:07:50Z","start_date_local":"2017-01-30T17:07:50Z","distance":461.6,"start_index":206,"end_index":264,"device_watts":false,"average_heartrate":151.6,"max_heartrate":154.0,"segment":{"id":7509812,"resource_state":2,"name":"Last
+        Chance!","activity_type":"Ride","distance":463.7,"average_grade":0.0,"maximum_grade":5.2,"elevation_high":1580.0,"elevation_low":1576.1,"start_latlng":[39.750633,-105.00442],"end_latlng":[39.753636,-105.008088],"start_latitude":39.750633,"start_longitude":-105.00442,"end_latitude":39.753636,"end_longitude":-105.008088,"climb_category":0,"city":"Denver","state":"CO","country":"United
+        States","private":false,"hazardous":false,"starred":false},"kom_rank":null,"pr_rank":null,"achievements":[],"hidden":false},{"id":20719150807,"resource_state":2,"name":"South
+        Platte - Confluence to 25","activity":{"id":849984063,"resource_state":1},"athlete":{"id":9685944,"resource_state":1},"elapsed_time":158,"moving_time":158,"start_date":"2017-01-31T00:09:29Z","start_date_local":"2017-01-30T17:09:29Z","distance":1293.0,"start_index":305,"end_index":463,"device_watts":false,"average_heartrate":150.9,"max_heartrate":155.0,"segment":{"id":1324074,"resource_state":2,"name":"South
+        Platte - Confluence to 25","activity_type":"Ride","distance":1298.59,"average_grade":0.1,"maximum_grade":1.9,"elevation_high":1582.5,"elevation_low":1578.7,"start_latlng":[39.75324934817827,-105.00963561246638],"end_latlng":[39.7435269272325,-105.01590544367676],"start_latitude":39.75324934817827,"start_longitude":-105.00963561246638,"end_latitude":39.7435269272325,"end_longitude":-105.01590544367676,"climb_category":0,"city":"Denver","state":"CO","country":"United
+        States","private":false,"hazardous":false,"starred":false},"kom_rank":null,"pr_rank":null,"achievements":[],"hidden":false},{"id":20719150811,"resource_state":2,"name":"Bronco
+        bridge","activity":{"id":849984063,"resource_state":1},"athlete":{"id":9685944,"resource_state":1},"elapsed_time":58,"moving_time":58,"start_date":"2017-01-31T00:12:23Z","start_date_local":"2017-01-30T17:12:23Z","distance":475.0,"start_index":479,"end_index":537,"device_watts":false,"average_heartrate":148.2,"max_heartrate":156.0,"segment":{"id":10080164,"resource_state":2,"name":"Bronco
+        bridge","activity_type":"Ride","distance":484.0,"average_grade":0.8,"maximum_grade":18.4,"elevation_high":1584.0,"elevation_low":1580.3,"start_latlng":[39.742972,-105.016592],"end_latlng":[39.738937,-105.018346],"start_latitude":39.742972,"start_longitude":-105.016592,"end_latitude":39.738937,"end_longitude":-105.018346,"climb_category":0,"city":"Denver","state":"Colorado","country":"United
+        States","private":false,"hazardous":false,"starred":false},"kom_rank":null,"pr_rank":null,"achievements":[],"hidden":false},{"id":20719150812,"resource_state":2,"name":"Rude/Sanchez
+        Challenge","activity":{"id":849984063,"resource_state":1},"athlete":{"id":9685944,"resource_state":1},"elapsed_time":141,"moving_time":141,"start_date":"2017-01-31T00:13:20Z","start_date_local":"2017-01-30T17:13:20Z","distance":993.2,"start_index":536,"end_index":677,"device_watts":false,"average_heartrate":157.0,"max_heartrate":167.0,"segment":{"id":4253862,"resource_state":2,"name":"Rude/Sanchez
+        Challenge","activity_type":"Ride","distance":1109.2,"average_grade":1.4,"maximum_grade":13.8,"elevation_high":1599.0,"elevation_low":1583.8,"start_latlng":[39.739022,-105.018296],"end_latlng":[39.734767,-105.027645],"start_latitude":39.739022,"start_longitude":-105.018296,"end_latitude":39.734767,"end_longitude":-105.027645,"climb_category":0,"city":"Denver","state":"CO","country":"United
+        States","private":false,"hazardous":false,"starred":false},"kom_rank":null,"pr_rank":null,"achievements":[],"hidden":false},{"id":20719150815,"resource_state":2,"name":"Paco
+        Sanchez Hillclimb","activity":{"id":849984063,"resource_state":1},"athlete":{"id":9685944,"resource_state":1},"elapsed_time":63,"moving_time":63,"start_date":"2017-01-31T00:15:06Z","start_date_local":"2017-01-30T17:15:06Z","distance":381.5,"start_index":642,"end_index":705,"device_watts":false,"average_heartrate":164.8,"max_heartrate":167.0,"segment":{"id":11860987,"resource_state":2,"name":"Paco
+        Sanchez Hillclimb","activity_type":"Ride","distance":397.3,"average_grade":3.0,"maximum_grade":16.6,"elevation_high":1601.0,"elevation_low":1588.9,"start_latlng":[39.736048,-105.026147],"end_latlng":[39.734745,-105.029652],"start_latitude":39.736048,"start_longitude":-105.026147,"end_latitude":39.734745,"end_longitude":-105.029652,"climb_category":0,"city":"Denver","state":"Colorado","country":"United
+        States","private":false,"hazardous":false,"starred":false},"kom_rank":null,"pr_rank":null,"achievements":[],"hidden":false},{"id":20719150817,"resource_state":2,"name":"1st
+        \u2013 Harlan 2 Teller TT","activity":{"id":849984063,"resource_state":1},"athlete":{"id":9685944,"resource_state":1},"elapsed_time":151,"moving_time":151,"start_date":"2017-01-31T00:28:04Z","start_date_local":"2017-01-30T17:28:04Z","distance":1134.6,"start_index":1420,"end_index":1571,"device_watts":false,"average_heartrate":156.3,"max_heartrate":164.0,"segment":{"id":7661347,"resource_state":2,"name":"1st
+        \u2013 Harlan 2 Teller TT","activity_type":"Ride","distance":1134.3,"average_grade":1.1,"maximum_grade":7.1,"elevation_high":1609.8,"elevation_low":1596.8,"start_latlng":[39.718566,-105.063027],"end_latlng":[39.718473,-105.076251],"start_latitude":39.718566,"start_longitude":-105.063027,"end_latitude":39.718473,"end_longitude":-105.076251,"climb_category":0,"city":"Lakewood","state":"CO","country":"United
+        States","private":false,"hazardous":false,"starred":false},"kom_rank":null,"pr_rank":null,"achievements":[],"hidden":false}],"splits_metric":[{"distance":1004.5,"elapsed_time":202,"elevation_difference":-9.0,"moving_time":128,"split":1,"average_heartrate":145.625,"average_speed":7.85,"pace_zone":0},{"distance":996.1,"elapsed_time":133,"elevation_difference":-3.0,"moving_time":133,"split":2,"average_heartrate":152.89473684210526,"average_speed":7.49,"pace_zone":0},{"distance":1005.3,"elapsed_time":123,"elevation_difference":2.0,"moving_time":123,"split":3,"average_heartrate":150.52032520325204,"average_speed":8.17,"pace_zone":0},{"distance":996.4,"elapsed_time":128,"elevation_difference":3.0,"moving_time":128,"split":4,"average_heartrate":149.515625,"average_speed":7.78,"pace_zone":0},{"distance":999.6,"elapsed_time":153,"elevation_difference":18.0,"moving_time":153,"split":5,"average_heartrate":161.50980392156862,"average_speed":6.53,"pace_zone":0},{"distance":1004.3,"elapsed_time":158,"elevation_difference":21.0,"moving_time":158,"split":6,"average_heartrate":162.8227848101266,"average_speed":6.36,"pace_zone":0},{"distance":1000.8,"elapsed_time":140,"elevation_difference":7.0,"moving_time":140,"split":7,"average_heartrate":155.8,"average_speed":7.15,"pace_zone":0},{"distance":994.1,"elapsed_time":193,"elevation_difference":8.0,"moving_time":140,"split":8,"average_heartrate":150.47857142857143,"average_speed":7.1,"pace_zone":0},{"distance":1005.3,"elapsed_time":139,"elevation_difference":8.0,"moving_time":139,"split":9,"average_heartrate":147.85611510791367,"average_speed":7.23,"pace_zone":0},{"distance":994.8,"elapsed_time":125,"elevation_difference":4.0,"moving_time":125,"split":10,"average_heartrate":151.288,"average_speed":7.96,"pace_zone":0},{"distance":1002.9,"elapsed_time":154,"elevation_difference":12.0,"moving_time":154,"split":11,"average_heartrate":159.23376623376623,"average_speed":6.51,"pace_zone":0},{"distance":999.8,"elapsed_time":137,"elevation_difference":5.0,"moving_time":137,"split":12,"average_heartrate":152.5109489051095,"average_speed":7.3,"pace_zone":0},{"distance":869.0,"elapsed_time":361,"elevation_difference":15.0,"moving_time":194,"split":13,"average_heartrate":152.07567567567568,"average_speed":4.48,"pace_zone":0}],"splits_standard":[{"distance":1613.0,"elapsed_time":283,"elevation_difference":-13.0,"moving_time":209,"split":1,"average_heartrate":148.35885167464116,"average_speed":7.72,"pace_zone":0},{"distance":1607.9,"elapsed_time":206,"elevation_difference":5.0,"moving_time":206,"split":2,"average_heartrate":151.84466019417476,"average_speed":7.81,"pace_zone":0},{"distance":1611.2,"elapsed_time":224,"elevation_difference":17.0,"moving_time":224,"split":3,"average_heartrate":156.05803571428572,"average_speed":7.19,"pace_zone":0},{"distance":1612.8,"elapsed_time":241,"elevation_difference":25.0,"moving_time":241,"split":4,"average_heartrate":159.80082987551867,"average_speed":6.69,"pace_zone":0},{"distance":1603.3,"elapsed_time":283,"elevation_difference":14.0,"moving_time":230,"split":5,"average_heartrate":152.2521739130435,"average_speed":6.97,"pace_zone":0},{"distance":1607.9,"elapsed_time":214,"elevation_difference":9.0,"moving_time":214,"split":6,"average_heartrate":149.07943925233644,"average_speed":7.51,"pace_zone":0},{"distance":1617.2,"elapsed_time":232,"elevation_difference":14.0,"moving_time":232,"split":7,"average_heartrate":156.5,"average_speed":6.97,"pace_zone":0},{"distance":1599.6,"elapsed_time":463,"elevation_difference":20.0,"moving_time":296,"split":8,"average_heartrate":153.20905923344947,"average_speed":5.4,"pace_zone":0}],"laps":[{"id":2596866781,"resource_state":2,"name":"Lap
+        1","activity":{"id":849984063,"resource_state":1},"athlete":{"id":9685944,"resource_state":1},"elapsed_time":2148,"moving_time":2148,"start_date":"2017-01-31T00:04:24Z","start_date_local":"2017-01-30T17:04:24Z","distance":12867.0,"start_index":0,"end_index":2146,"total_elevation_gain":118.0,"average_speed":6.0,"max_speed":13.4,"device_watts":false,"average_heartrate":153.5,"max_heartrate":173.0,"lap_index":1,"split":1}],"partner_logo_url":null,"partner_brand_tag":null,"photos":{"primary":null,"count":0},"device_name":"Suunto","embed_token":"7c074a03b1531b7307a4f62c51afcc3b50a28c1d"}'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 02:52:50 GMT
+recorded_with: VCR 3.0.3
