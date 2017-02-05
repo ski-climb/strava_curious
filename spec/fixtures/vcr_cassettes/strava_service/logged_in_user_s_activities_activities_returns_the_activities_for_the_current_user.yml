@@ -23,24 +23,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 02 Feb 2017 20:31:46 GMT
+      - Sun, 05 Feb 2017 18:10:19 GMT
       Etag:
       - W/"75fbf8f61a2380015bf2ccadc0215d8c"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWFiZDJiOTNiYTMxNzc0Y2RiZjYwZmM2MGMzNTIxYzZkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--9777aedda9d7d8c3fae708d129a4e36310f85558;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTkzMjE0NmEzNDU0ZDZiMTRiM2Q5NDExNGZiZTVhNzdkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--5d11c5c9569f5491162b661e6a3f1d8cc1fd888d;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
       Strava-Athlete-Upload-Version:
-      - 5fa08ba893851ba675ea94556f7b302f
+      - 2abe5530324bf2dfc69c422b8149dd63
       X-Frame-Options:
       - DENY
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '9,227'
+      - '11,24'
       X-Request-Id:
-      - 269350b576dc747025e275590fb21661
+      - 126b84afb84827c25f50ca33dd90ea08
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
@@ -60,5 +60,5 @@ http_interactions:
         America/Denver","utc_offset":-25200.0,"start_latlng":[39.708313,-105.087695],"end_latlng":[39.751272,-104.99593],"location_city":null,"location_state":null,"location_country":"United
         States","start_latitude":39.708313,"start_longitude":-105.087695,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a849983403","summary_polyline":"}ojqFb}k`SaApF_LKiAk@o@qGwSTu@oFcUEOmpC}[qAP_e@eEyAb@ihAaCsBB{cA{\\k@YqOg`@Pc@iL_Vak@yAgNwVcH]_C}HuCe^mBmHiNgPyR{AqDxDeBd\\md@vC}A_@uCoTqZ{@w@_@zAtCqA","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":true,"flagged":false,"gear_id":null,"average_speed":7.691,"max_speed":11.9,"average_temp":10.0,"device_watts":false,"has_heartrate":true,"average_heartrate":150.0,"max_heartrate":170.0,"elev_high":1708.0,"elev_low":1573.0,"pr_count":0,"total_photo_count":0,"has_kudoed":false,"workout_type":null}]'
     http_version: 
-  recorded_at: Thu, 02 Feb 2017 20:31:47 GMT
+  recorded_at: Sun, 05 Feb 2017 18:10:20 GMT
 recorded_with: VCR 3.0.3

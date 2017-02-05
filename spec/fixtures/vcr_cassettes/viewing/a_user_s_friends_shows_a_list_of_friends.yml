@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.strava.com/api/v3/athlete/friends?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 05 Feb 2017 18:10:18 GMT
+      Etag:
+      - W/"3e4a39cd232a1f43d1fe4246e669747c"
+      Set-Cookie:
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWFkNWZmNDVkYWIwMGQxM2YxNTVhOTI3NmJjYjM4NzM1BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--23c7f8838844b9622dc0888a516f4d74399adf11;
+        domain=strava.com; path=/; HttpOnly
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '600,30000'
+      X-Ratelimit-Usage:
+      - '7,20'
+      X-Request-Id:
+      - 6f55a892a025c6da9961f69e0cf64f39
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '547'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":581446,"username":"robbie_smith","resource_state":2,"firstname":"Robbie","lastname":"S","city":"Denver","state":"CO","country":"United
+        States","sex":"M","premium":false,"created_at":"2012-06-01T21:13:02Z","updated_at":"2017-02-05T00:21:19Z","badge_type_id":0,"profile_medium":"https://dgalywyr863hv.cloudfront.net/pictures/athletes/581446/4472655/2/medium.jpg","profile":"https://dgalywyr863hv.cloudfront.net/pictures/athletes/581446/4472655/2/large.jpg","friend":"accepted","follower":"accepted"},{"id":5649077,"username":"laszlobalogh","resource_state":2,"firstname":"Laszlo","lastname":"Balogh","city":"Boulder","state":"CO","country":"United
+        States","sex":"M","premium":false,"created_at":"2014-07-15T13:34:08Z","updated_at":"2017-01-23T03:40:50Z","badge_type_id":0,"profile_medium":"https://dgalywyr863hv.cloudfront.net/pictures/athletes/5649077/2035236/1/medium.jpg","profile":"https://dgalywyr863hv.cloudfront.net/pictures/athletes/5649077/2035236/1/large.jpg","friend":"pending","follower":"accepted"},{"id":19613252,"username":"kyle_heppenstall","resource_state":2,"firstname":"Kyle","lastname":"Heppenstall","city":"Denver","state":"CO","country":null,"sex":"M","premium":false,"created_at":"2017-01-28T01:18:05Z","updated_at":"2017-02-04T22:58:22Z","badge_type_id":0,"profile_medium":"https://lh4.googleusercontent.com/-wnhin8q_RaY/AAAAAAAAAAI/AAAAAAAAAV0/9CY9vX2eFRA/photo.jpg","profile":"https://lh4.googleusercontent.com/-wnhin8q_RaY/AAAAAAAAAAI/AAAAAAAAAV0/9CY9vX2eFRA/photo.jpg","friend":"accepted","follower":null}]'
+    http_version: 
+  recorded_at: Sun, 05 Feb 2017 18:10:18 GMT
+recorded_with: VCR 3.0.3
