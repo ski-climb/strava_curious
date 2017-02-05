@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 describe "Successful login" do
-  let(:date_of_ride) { "2017-01-31T07:45:34Z" }
-  let(:distance_in_meters) { 12904.9 }
+  let(:date_of_ride) { "7:45 AM - 31 January 2017" }
+  let(:distance_in_miles) { 8.04 }
 
   context "given the user does not exist but has a Strava account" do
     scenario "a new user signs in", :vcr => true do
@@ -19,7 +19,7 @@ describe "Successful login" do
 
       expect(page).to have_current_path(activities_path)
       expect(page).to have_content "Morning Ride"
-      expect(page).to have_content distance_in_meters
+      expect(page).to have_content distance_in_miles
       expect(page).to have_content date_of_ride
     end
   end
@@ -39,7 +39,7 @@ describe "Successful login" do
 
       expect(page).to have_current_path(activities_path)
       expect(page).to have_content "Morning Ride"
-      expect(page).to have_content distance_in_meters
+      expect(page).to have_content distance_in_miles
       expect(page).to have_content date_of_ride
     end
   end

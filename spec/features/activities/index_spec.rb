@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "Viewing a users' activities" do
   context "a user has activities" do
     let!(:strava_user) { create(:user, :strava) }
-    let!(:distance_in_meters) { 12904.9 }
+    let!(:distance_in_meters) { 8.04 }
     scenario "user sees a list of their activities", :vcr => true do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(strava_user)
       visit activities_path

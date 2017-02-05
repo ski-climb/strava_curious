@@ -8,18 +8,18 @@
       <h2 class="list-group-item-heading activity_header">Ride</h2>
     </div>
     <div class="list-group-item">
-      <p class="list-group-item-text">Longest Ride (meters)</p>
-      <h4 class="list-group-item-heading"><%= @athlete.biggest_ride_distance %></h4>
-      <p class="list-group-item-text">Biggest Climb Ridden (elevation gained in meters)</p>
-      <h4 class="list-group-item-heading"><%= @athlete.biggest_climb_elevation_gain %></h4>
+      <p class="list-group-item-text">Longest Ride (miles)</p>
+      <h4 class="list-group-item-heading"><%= in_miles(@athlete.biggest_ride_distance) %></h4>
+      <p class="list-group-item-text">Biggest Climb Ridden (elevation gained in feet)</p>
+      <h4 class="list-group-item-heading"><%= in_feet(@athlete.biggest_climb_elevation_gain) %></h4>
     </div>
     <div class="list-group-item">
-      <p class="list-group-item-text">Total Distance (meters)</p>
-      <h4 class="list-group-item-heading"><%= @athlete.total_ride_distance %></h4>
-      <p class="list-group-item-text">Total Moving Time (seconds)</p>
-      <h4 class="list-group-item-heading"><%= @athlete.total_ride_duration %></h4>
-      <p class="list-group-item-text">Total Elevation Gained (meters)</p>
-      <h4 class="list-group-item-heading"><%= @athlete.total_ride_elevation_gain %></h4>
+      <p class="list-group-item-text">Total Distance (miles)</p>
+      <h4 class="list-group-item-heading"><%= in_miles(@athlete.total_ride_distance) %></h4>
+      <p class="list-group-item-text">Total Moving Time (hours)</p>
+      <h4 class="list-group-item-heading"><%= in_hours(@athlete.total_ride_duration) %></h4>
+      <p class="list-group-item-text">Total Elevation Gained (feet)</p>
+      <h4 class="list-group-item-heading"><%= in_feet(@athlete.total_ride_elevation_gain) %></h4>
     </div>
   </div>
 
@@ -28,12 +28,12 @@
       <h2 class="list-group-item-heading text-center activity_header">Run</h2>
     </div>
     <div class="list-group-item">
-      <p class="list-group-item-text">Total Distance (meters)</p>
-      <h4 class="list-group-item-heading"><%= @athlete.total_run_distance %></h4>
-      <p class="list-group-item-text">Total Moving Time (seconds)</p>
-      <h4 class="list-group-item-heading"><%= @athlete.total_run_duration %></h4>
-      <p class="list-group-item-text">Total Elevation Gained (meters)</p>
-      <h4 class="list-group-item-heading"><%= @athlete.total_run_elevation_gain %></h4>
+      <p class="list-group-item-text">Total Distance (miles)</p>
+      <h4 class="list-group-item-heading"><%= in_miles(@athlete.total_run_distance) %></h4>
+      <p class="list-group-item-text">Total Moving Time (hours)</p>
+      <h4 class="list-group-item-heading"><%= in_hours(@athlete.total_run_duration) %></h4>
+      <p class="list-group-item-text">Total Elevation Gained (feet)</p>
+      <h4 class="list-group-item-heading"><%= in_feet(@athlete.total_run_elevation_gain) %></h4>
     </div>
   </div>
 
@@ -42,10 +42,10 @@
       <h2 class="list-group-item-heading text-right activity_header">Swim</h2>
     </div>
     <div class="list-group-item">
-      <p class="list-group-item-text">Total Distance (meters)</p>
-      <h4 class="list-group-item-heading"><%= @athlete.total_swim_distance %></h4>
-      <p class="list-group-item-text">Total Duration (seconds)</p>
-      <h4 class="list-group-item-heading"><%= @athlete.total_swim_duration %></h4>
+      <p class="list-group-item-text">Total Distance (miles)</p>
+      <h4 class="list-group-item-heading"><%= in_miles(@athlete.total_swim_distance) %></h4>
+      <p class="list-group-item-text">Total Duration (hours)</p>
+      <h4 class="list-group-item-heading"><%= in_hours(@athlete.total_swim_duration) %></h4>
     </div>
   </div>
 </div>

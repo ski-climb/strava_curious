@@ -28,4 +28,16 @@ class StravaAthlete
     raw_stats = StravaService.stats(athlete_id, token)
     self.new(raw_stats)
   end
+
+  def self.friends(token)
+    raw_friends = StravaService.friends(token)
+    raw_friends.map do |raw_friend|
+      StravaFriend.new(raw_friend)
+    end
+  end
+
+  def self.friend(friend_id, token)
+    raw_friend = StravaService.friend(friend_id, token)
+    StravaFriend.new(raw_friend)
+  end
 end

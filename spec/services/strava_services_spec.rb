@@ -73,4 +73,21 @@ describe StravaService do
       end
     end
   end
+
+  describe "logged in user's friends" do
+    context ".friends" do
+      it "returns the friends for the current user", :vcr => true do
+        raw_friends = StravaService.friends(token)
+        expect(raw_friends).to be_an Array
+
+        raw_friend = raw_friends.first
+        expect(raw_friend).to have_key :id
+        expect(raw_friend).to have_key :username
+        expect(raw_friend).to have_key :city
+        expect(raw_friend).to have_key :state
+
+        expect(raw_friend[:username]).to be_a String
+      end
+    end
+  end
 end

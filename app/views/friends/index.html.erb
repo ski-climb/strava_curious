@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <h1 class="text-center">My Friends</h1>
+  <hr class="divider" />
+
+  <div class="list-group">
+    <% @friends.each do |friend| %>
+      <%= link_to friend.username, friend_path(friend.id), class: "list-group-item" %>
+    <% end %>
+  </div>
+</div>

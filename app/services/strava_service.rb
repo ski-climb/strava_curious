@@ -20,6 +20,16 @@ class StravaService
     JSON.parse(stats.body, symbolize_names: true)
   end
 
+  def self.friends(token)
+    friends = conn.get("/api/v3/athlete/friends", {access_token: token})
+    JSON.parse(friends.body, symbolize_names: true)
+  end
+
+  def self.friend(friend_id, token)
+    friend = conn.get("/api/v3/athletes/#{friend_id}", {access_token: token})
+    JSON.parse(friend.body, symbolize_names: true)
+  end
+
   def self.authenticate(code)
     user = conn.post("/oauth/token", {
       client_id: ENV["STRAVA_CLIENT_ID"],
