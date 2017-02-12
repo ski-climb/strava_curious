@@ -1,8 +1,9 @@
 require 'rails_helper'
 
 describe StravaAthlete do
+  let(:strava_athlete) { StravaAthlete.new(api_response_athlete) }
+
   describe "attributes" do
-    let(:strava_athlete) { StravaAthlete.new(api_response_athlete) }
     subject { strava_athlete }
 
     it { is_expected.to respond_to(:biggest_ride_distance) } 

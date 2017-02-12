@@ -9,9 +9,10 @@ class StravaActivity
               :average_speed,
               :max_speed,
               :average_heartrate,
-              :max_heartrate
+              :max_heartrate,
+              :athlete_name
 
-  def initialize(data = {})
+  def initialize(data = {}, athlete_data = {})
     @id =                   data[:id]
     @name =                 data[:name]
     @distance =             data[:distance]
